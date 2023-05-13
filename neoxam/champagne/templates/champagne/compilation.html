@@ -1,0 +1,42 @@
+{% extends "champagne/base.html" %}
+
+{% load static %}
+
+{% block content %}
+<h1 class="page-header">Compilation</h1>
+
+<div class="table-responsive">
+    <table class="table table-striped">
+        <tbody>
+        <tr>
+            <td>Date</td>
+            <td>{{ compilation.compiled_at }}</td>
+        </tr>
+        <tr>
+            <td>Name</td>
+            <td>{{ compilation.procedure_name }}</td>
+        </tr>
+        <tr>
+            <td>State</td>
+            <td>{{ compilation.state }}</td>
+        </tr>
+        {% if compilation.patterns %}
+        <tr>
+            <td>Patterns</td>
+            <td>{{ compilation.patterns }}</td>
+        </tr>
+        {% endif %}
+        {% if compilation.artifact_url %}
+        <tr>
+            <td>Artifact</td>
+            <td><a href="{{ compilation.artifact_url }}" target="_blank">Download</a></td>
+        </tr>
+        {% endif %}
+        </tbody>
+    </table>
+</div>
+<h2 class="sub-header">Output</h2>
+<pre>
+    {{ compilation.output }}
+</pre>
+{% endblock %}

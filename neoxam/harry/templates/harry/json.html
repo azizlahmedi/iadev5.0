@@ -1,0 +1,36 @@
+{% extends "harry/base.html" %}
+
+{% load static %}
+
+{% load crispy_forms_tags %}
+{% block content %}
+<h1 class="page-header">Upload JSON Untranslated</h1>
+<div class="col-xs-12 col-sm-9">
+    <p>On Delia Runtime installation, generate an aggregated JSON file from all untranslated files with <code>delia-untranslated</code> tool to submit all new labels to translation.</p>
+    <pre>$ delia-untranslated --help
+Usage:
+    Usage: delia-untranslated [options]
+
+
+Options:
+  -h, --help            show this help message and exit
+  -d SOURCE_DIR, --untranslated-directory=SOURCE_DIR
+                        Specify the directory where the untranslated files are
+                        stored.
+  -o DEST_FILE, --json-file=DEST_FILE
+                        Specify the output JSON file, if exists, it will be
+                        consolidated.</pre>
+    <p>Sample:</p>
+    <pre>$ delia-untranslated -d $DELIA_GPDIR/work/untranslated -o /tmp/untranslated.json</pre>
+    <p>Then use this form to upload the resulting file:</p>
+    <form action="." method="post" class="form-horizontal" enctype="multipart/form-data">
+        {% csrf_token %}
+        {% crispy form %}
+        <div class="form-group">
+            <div class="col-sm-offset-3 col-sm-9">
+                <button type="submit" class="btn btn-success">Upload</button>
+            </div>
+        </div>
+    </form>
+</div>
+{% endblock content %}

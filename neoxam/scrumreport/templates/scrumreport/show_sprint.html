@@ -1,0 +1,80 @@
+{% extends "base.html" %}
+
+{% block content %}
+    Sprint:<b>{{ sprint }}</b>
+    <a href="{% url 'index' %}"><input type="submit" value="Change" /></a>
+
+    <p>
+        <style>
+        td, th {
+            border: 1px solid white;
+        }
+        td.noborder {
+            border: 0px solid white;
+        }
+        tr.main-header {
+            color: #FFFFFF;
+            background: #5B9BD5;
+        }
+        table {
+            border-collapse: collapse;
+        }
+        </style>
+        <table>
+            {% for issue_sublist in all_issues %}
+                {% for epic, timespent, issues in issue_sublist.epics %}
+                    {% if forloop.first %}
+                        <tr><th colspan=5>{{ issue_sublist.issue_type|title }} issues</th></tr>
+                        <tr class="main-header">
+                            <th>Epic</th>
+                            <th>Epic man days</th>
+                            <th>Jira</th>
+                            <th>Summary</th>
+                            <th>Man days</th>
+                        </tr>
+                    {% endif %}
+                        <tr>
+                            <td rowspan="{{ issues|length }}" class='{{ epic.epic_color }}'>
+                                <a href="{{ epic.url }}">{{ epic.summary|default_if_none:"" }}</a>
+                            </td>
+                            <td rowspan="{{ issues|length }}" class='{{ epic.epic_color }}' align="right">
+                                {{ timespent|default_if_none:"" }}
+                            </td>
+                    {% for issue in issues %}
+                            <td bgcolor="{% cycle '#D2DEEF' '#EAEFF7' %}"><a href="{{ issue.url}}">{{ issue.key }}</a></td>
+                            <td bgcolor="{% cycle '#D2DEEF' '#EAEFF7' %}">{{ issue.summary }}</td>
+                            <td align="right" bgcolor="{% cycle '#D2DEEF' '#EAEFF7' %}">{{ issue.timespent }}</td>
+                        </tr>
+
+                        {% if not forloop.last %}
+                            <tr>
+                        {% endif %}
+                    {% endfor %}
+                    {% if forloop.last %}
+                        <tr>
+                            <th></th>
+                            <th align="right">{{ issue_sublist.total }}</th>
+                            <th colspan=2>Total</th>
+                            <th align="right">{{ issue_sublist.total }}</th>
+                        </tr>
+                        {% for i in "123" %}
+                            <tr>
+                                <td  class="noborder" colspan=5>&nbsp;</td>
+                            </tr>
+                        {% endfor %} 
+                    {% endif %}
+                {% empty %}
+                    <tr><td colspan=5>No {{ issue_sublist.issue_type }} issues.</td></tr>
+                {% endfor %}
+            {% endfor %}
+        </table>
+    </p>
+    <form method="POST" action="{% url 'load_data' %}">
+        {% csrf_token %}
+        Click here to load (or refresh) the issues from JIRA:
+        <input type="hidden" name="resources" value="issues" />
+        <input type="hidden" name="scrum_id" value="{{ request.session.nxuser.current_scrum.jira_id }}" />
+        <input type="hidden" name="sprint_id" value="{{ sprint.jira_id }}" />
+        <input type="submit" value="Load" />
+    </form>
+{% endblock %}

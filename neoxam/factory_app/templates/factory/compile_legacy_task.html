@@ -1,0 +1,40 @@
+{% extends "factory/base.html" %}
+
+{% load static %}
+
+{% block content %}
+<h1 class="page-header">Compile Copy Task</h1>
+
+<div class="table-responsive">
+    <table class="table table-striped">
+        <tbody>
+        <tr>
+            <td>Date</td>
+            <td>{{ task.created_at }}</td>
+        </tr>
+        <tr>
+            <td>Username</td>
+            <td>{{ task.username }}</td>
+        </tr>
+        <tr>
+            <td>Schema</td>
+            <td>{{ task.schema_version }}</td>
+        </tr>
+        <tr>
+            <td>Procedure</td>
+            <td>{{ task.procedure_name }}</td>
+        </tr>
+        <tr>
+            <td>State</td>
+            <td>{{ task.state }}</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+{% if task.output %}
+<h2 class="sub-header">Output</h2>
+<pre>
+    {{ task.output }}
+</pre>
+{% endif %}
+{% endblock %}

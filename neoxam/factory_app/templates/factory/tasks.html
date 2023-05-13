@@ -1,0 +1,51 @@
+{% extends "factory/base.html" %}
+
+{% load static %}
+
+{% block content %}
+<h1 class="page-header">Tasks</h1>
+<div class="table-responsive">
+    <table class="table table-striped">
+        <thead>
+        <tr>
+            <th>Date</th>
+            <th>Task</th>
+            <th>Schema</th>
+            <th>Procedure</th>
+            <th>Revision</th>
+            <th>Res. Rev.</th>
+            <th>Compiler</th>
+            <th>State</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for task in tasks %}
+        <tr>
+            <td><a href="{% url 'factory-task' pk=task.pk %}">{{ task.created_at }}</a></td>
+            <td>{{ task.name }}</td>
+            <td>{{ task.procedure_revision.procedure.schema_version }}</td>
+            <td>{{ task.procedure_revision.procedure.name }}</td>
+            <td>{{ task.procedure_revision.revision }}</td>
+            <td>{{ task.procedure_revision.resource_revision }}</td>
+            <td>{{ task.compiler.version }}</td>
+            <td>{{ task.state }}</td>
+        </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+</div>
+<nav>
+    <ul class="pager">
+        {% if tasks.has_previous %}
+        <li class="previous">
+            <a href="?page={{ tasks.previous_page_number }}"><span aria-hidden="true">&larr;</span> Newer</a>
+        </li>
+        {% endif %}
+        {% if tasks.has_next %}
+        <li class="next">
+            <a href="?page={{ tasks.next_page_number }}">Older <span aria-hidden="true">&rarr;</span></a>
+        </li>
+        {% endif %}
+    </ul>
+</nav>
+{% endblock %}

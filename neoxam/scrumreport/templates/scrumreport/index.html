@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block content %}
+    {% if request.session.nxuser.current_scrum %}
+    <ul>
+    {% for sprint in sprints %}
+        <li><a href="{% url 'show_sprint' sprint.jira_id %}">{{ sprint }}</a></li>
+    {% empty %}
+        There are no sprints here :(
+    {% endfor %}
+    </ul>
+    <form method="POST" action="{% url 'load_data' %}">
+        {% csrf_token %}
+        Click here to load, or reload, the sprints from JIRA:
+        <input type="hidden" name="resources" value="sprints" />
+        <input type="hidden" name="scrum_id" value="{{ request.session.nxuser.current_scrum.jira_id }}" />
+        <input type="submit" value="Load" />
+    </form>
+    {% endif %}
+{% endblock %}

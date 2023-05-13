@@ -1,0 +1,79 @@
+{% extends "adltrack/base.html" %}
+
+{% load static %}
+{% load adltrack_tags %}
+
+{% block content %}
+
+<h1 class="page-header">Commit</h1>
+
+<div class="table-responsive">
+    <table class="table table-striped">
+        <tbody>
+        <tr>
+            <td>Revision</td>
+            <td>{{ commit.revision }}</td>
+        </tr>
+        <tr>
+            <td>Path</td>
+            <td>{{ commit.path }}</td>
+        </tr>
+        <tr>
+            <td>SCM</td>
+            <td><a href="{{ commit|fisheye_revision_url }}" target="_blank">FishEye</a>, <a href="{{ commit|viewvc_revision_url }}" target="_blank">ViewVC</a></td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+{% if procedure_versions|length > 0 %}
+    <div align="right">
+        {% with "commit_"|addstr:commit.revision|addstr:".xlsx" as filename %}
+            <a class="btn btn-primary" href="{% url 'get-file' filename %}" role="button">Download {{ filename }}</a>
+        {% endwith %}
+    </div>
+{% endif %}
+
+<h2 class="sub-header">Procedures</h2>
+
+<div class="table-responsive">
+    <table class="table table-striped">
+        <thead>
+        <tr>
+            <th>Version</th>
+            <th>Name</th>
+            <th>Tokens</th>
+            <th>&Delta; Tokens</th>
+            <th>Macros</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for pv in procedure_versions %}
+        <tr {% if not pv.analyzed %} class="danger" {% elif pv.analyzed and not pv.magnum_compiled %} class="warning" {% elif pv.analyzed and pv.magnum_compiled %} class="success" {% endif %}>
+            <td>
+                <a href="{% url 'adltrack-procedure-version' version=pv.procedure.version name=pv.procedure.name revision=commit.revision %}">{{pv.procedure.version }}</a>
+            </td>
+            <td>{{ pv.procedure.name }}</td>
+            <td>{{ pv.data.count_tokens }}</td>
+            <td>{{ pv.data.delta_tokens }}</td>
+            <td>{% if pv.analyzed %}{{ pv.data.macros|length }}{% endif %}</td>
+        </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+</div>
+<nav>
+    <ul class="pager">
+        {% if procedure_versions.has_previous %}
+        <li class="previous">
+            <a href="?page={{ procedure_versions.previous_page_number }}"><span aria-hidden="true">&larr;</span> Previous</a>
+        </li>
+        {% endif %}
+        {% if procedure_versions.has_next %}
+        <li class="next">
+            <a href="?page={{ procedure_versions.next_page_number }}">Next <span aria-hidden="true">&rarr;</span></a>
+        </li>
+        {% endif %}
+    </ul>
+</nav>
+{% endblock %}

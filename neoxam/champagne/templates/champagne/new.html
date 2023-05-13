@@ -1,0 +1,27 @@
+{% extends "champagne/base.html" %}
+
+{% load static %}
+
+{% load crispy_forms_tags %}
+{% block content %}
+<h1 class="page-header">Compilation Magnum Gp2009</h1>
+<div class="col-xs-12 col-sm-9">
+    <form action="." method="post" class="form-horizontal" enctype="multipart/form-data">
+        {% csrf_token %}
+        <div class="form-group">
+            <label class="control-label col-sm-3">Instrument</label>
+            <div class="controls col-sm-9">
+                {% for value, label in patterns %}
+                <input type="checkbox" name="patterns" value="{{ value }}"> {{ label }} <br/>
+                {% endfor %}
+            </div>
+        </div>
+        {% crispy form %}
+        <div class="form-group">
+            <div class="col-sm-offset-3 col-sm-9">
+                <button type="submit" class="btn btn-success">Compile</button>
+            </div>
+        </div>
+    </form>
+</div>
+{% endblock content %}

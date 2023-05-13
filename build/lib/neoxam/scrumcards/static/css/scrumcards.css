@@ -1,0 +1,60 @@
+/*
+ * General
+ */
+body {
+    margin-top: 20px
+}
+
+/*
+ * Card
+ */
+.card {
+    page-break-inside: avoid;
+    margin-bottom: 4px;
+}
+
+.card > .panel-body {
+    height: 200px;
+    font-size: 24px;
+}
+
+.card > .panel-heading {
+    background-image: none !important;
+    background-color: #fff;
+}
+
+/*
+ * Issue type
+ */
+.card-story > .panel-heading {
+    background-color: rgba(204, 51, 102, 0.5) !important;
+}
+
+.card-bug > .panel-heading {
+    background-color: rgba(204, 0, 0, 0.5) !important;
+}
+
+.card-sub-task > .panel-heading {
+    background-color: rgba(0, 153, 153, 0.5) !important;
+}
+
+.card-task > .panel-heading {
+    background-color: rgba(191, 228, 255, 0.5) !important;
+}
+
+.card-development > .panel-heading {
+    background-color: rgba(182, 109, 56, 0.5) !important;
+}
+
+.card-code-review > .panel-heading {
+    background-color: rgba(141, 202, 253, 0.5) !important;
+}
+
+/*
+ * Print
+ */
+@media print {
+    body {
+        -webkit-print-color-adjust: exact;
+    }
+}

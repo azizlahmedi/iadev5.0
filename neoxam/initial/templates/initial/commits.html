@@ -1,0 +1,52 @@
+{% extends "initial/base.html" %}
+
+{% load static %}
+
+{% block content %}
+<h1 class="page-header">Initial Commits</h1>
+<p>
+<div class="table-responsive">
+    <table class="table table-striped">
+        <thead>
+        <tr>
+            <th>Svn Date</th>
+            <th>User</th>
+            <th>Revision</th>
+            <th>Path</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for commit in commits %}
+        <tr>
+            <td>{{ commit.svndate }}</td>
+            <td>{{ commit.user }}</td>
+            <td>{{ commit.revision }}</td>
+            <td>{{ commit.svn_path }}</td>
+        </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+</div>
+<nav>
+    <ul class="pager">
+        {% if commits.has_previous %}
+        <li class="previous">
+            <a href="?page={{ commits.previous_page_number }}"><span aria-hidden="true">&larr;</span> Newer</a>
+        </li>
+        {% endif %}
+        {% if commits.has_next %}
+        <li class="next">
+            <a href="?page={{ commits.next_page_number }}">Older <span aria-hidden="true">&rarr;</span></a>
+        </li>
+        {% endif %}
+    </ul>
+</nav>
+</p>
+<button type="button" class="btn btn-default" onclick="window.location.href='{% url 'initial-home' %}'">Go back</button>
+<script type="text/javascript">
+$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();
+});
+
+</script>
+{% endblock %}

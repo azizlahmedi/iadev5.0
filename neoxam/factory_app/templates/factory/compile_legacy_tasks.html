@@ -1,0 +1,45 @@
+{% extends "factory/base.html" %}
+
+{% load static %}
+
+{% block content %}
+<h1 class="page-header">Compile Copy Tasks</h1>
+<div class="table-responsive">
+    <table class="table table-striped">
+        <thead>
+        <tr>
+            <th>Date</th>
+            <th>Username</th>
+            <th>Schema</th>
+            <th>Procedure</th>
+            <th>State</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for task in tasks %}
+        <tr>
+            <td><a href="{% url 'factory-compile-legacy-task' pk=task.pk %}">{{ task.created_at }}</a></td>
+            <td>{{ task.username }}</td>
+            <td>{{ task.schema_version }}</td>
+            <td>{{ task.procedure_name }}</td>
+            <td>{{ task.state }}</td>
+        </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+</div>
+<nav>
+    <ul class="pager">
+        {% if tasks.has_previous %}
+        <li class="previous">
+            <a href="?page={{ tasks.previous_page_number }}"><span aria-hidden="true">&larr;</span> Newer</a>
+        </li>
+        {% endif %}
+        {% if tasks.has_next %}
+        <li class="next">
+            <a href="?page={{ tasks.next_page_number }}">Older <span aria-hidden="true">&rarr;</span></a>
+        </li>
+        {% endif %}
+    </ul>
+</nav>
+{% endblock %}

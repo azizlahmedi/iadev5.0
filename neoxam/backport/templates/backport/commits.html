@@ -1,0 +1,69 @@
+{% extends "backport/base.html" %}
+
+{% load static %}
+{% load adltrack_tags %}
+
+{% block content %}
+<h1 class="page-header">Commits</h1>
+<div class="table-responsive">
+    <table class="table table-striped">
+        <thead>
+        <tr>
+            <th>Revision</th>
+            <th>Path</th>
+            <th>Username</th>
+            <th>Commit time</th>
+            <th>Patched source</th>
+            <th>Hide</th>
+            <th>SCM</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for record in records %}
+        {% if record.patch.return_code == 0 %}
+        <tr class="success">
+        {% elif record.patch.return_code == 1 %}
+        <tr class="warning">
+        {% else %}
+        <tr class="danger" data-toggle="tooltip" title="{{ record.patch.patch_content|stringformat:'s' }}">
+        {% endif %}
+            <td>{{ record.commit.revision }}</td>
+            <td>{{ record.commit.path }}</td>
+            <td>{{ record.commit.username }}</td>
+            <td>{{ record.commit.commit_date }}</td>
+	        {% if record.patch.return_code == 2 or record.patch.return_code == -1 %}
+	        <td><button type="button" class="btn btn-default" disabled>download</button></td>
+	        {% else %}            
+	        <td><button type="button" class="btn btn-default" onclick="window.location.href='{% url 'backport-commit-download' revision=record.commit.revision %}'">download</button></td>
+			{% endif %}
+			{% if record.patch.return_code == -1 %}
+	        <td><button type="button" class="btn btn-default" disabled>hide</button></td>
+			{% else %}
+	        <td><button type="button" class="btn btn-default" onclick="window.location.href='{% url 'backport-commit-hide' revision=record.commit.revision %}'">hide</button></td>
+            {% endif %}
+            <td><a href="{{ record.commit|fisheye_revision_url }}" target="_blank">FishEye</a>, <a href="{{ record.commit|viewvc_revision_url }}" target="_blank">ViewVC</a></td>
+        </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+</div>
+<nav>
+    <ul class="pager">
+        {% if records.has_previous %}
+        <li class="previous">
+            <a href="?page={{ records.previous_page_number }}"><span aria-hidden="true">&larr;</span> Newer</a>
+        </li>
+        {% endif %}
+        {% if records.has_next %}
+        <li class="next">
+            <a href="?page={{ records.next_page_number }}">Older <span aria-hidden="true">&rarr;</span></a>
+        </li>
+        {% endif %}
+    </ul>
+</nav>
+<script type="text/javascript">
+$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();
+});
+</script>
+{% endblock %}

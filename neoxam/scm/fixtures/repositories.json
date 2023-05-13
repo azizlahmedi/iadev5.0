@@ -1,0 +1,12 @@
+[
+{
+    "model": "scm.repository",
+    "pk": 1,
+    "fields": {
+        "key": "gp",
+        "scm": "svn",
+        "url": "http://avalon.bams.corp:3180/svn/repos/gp/trunk/",
+        "timeout": 1800
+    }
+}
+]

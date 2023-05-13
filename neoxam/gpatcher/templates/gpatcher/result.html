@@ -1,0 +1,55 @@
+{% extends "gpatcher/base.html" %}
+
+{% load static %}
+
+{% block content %}
+<h1 class="page-header">Patch GP3 Source Result</h1>
+<p>
+<div class="table-responsive">
+    <table class="table table-striped">
+        <thead>
+        <tr>
+            <th>Time</th>
+            <th>Version</th>
+            <th>Path</th>
+            <th>Status</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for record in patch_records %}
+        {% if record.status == 1 %}
+        <tr class="success">
+        {% else %}
+        <tr class="danger">
+        {% endif %}
+            <td>{{ record.time }}</td>
+            <td>{{ record.version }}</td>
+            <td>{{ record.path }}</td>
+            <td>{{ record.status }}</td>
+        </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+</div>
+<nav>
+    <ul class="pager">
+        {% if patch_records.has_previous %}
+        <li class="previous">
+            <a href="?page={{ records.previous_page_number }}"><span aria-hidden="true">&larr;</span> Newer</a>
+        </li>
+        {% endif %}
+        {% if patch_records.has_next %}
+        <li class="next">
+            <a href="?page={{ records.next_page_number }}">Older <span aria-hidden="true">&rarr;</span></a>
+        </li>
+        {% endif %}
+    </ul>
+</nav>
+</p>
+<button type="button" class="btn btn-default" onclick="window.location.href='{% url 'gpatcher-home' %}'">Go back</button>
+<script type="text/javascript">
+$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();
+});
+</script>
+{% endblock %}

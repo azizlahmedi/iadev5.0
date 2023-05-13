@@ -1,0 +1,8 @@
+{% extends "commons/base.html" %}
+
+{% block sidebar %}
+<ul class="nav nav-sidebar">
+<li{% if nav == 'json' %} class="active"{% endif %}><a href="{% url 'harry-json' %}">Upload JSON</a></li>
+</ul>
+{% endblock %}
+

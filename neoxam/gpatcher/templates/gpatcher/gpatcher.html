@@ -1,0 +1,21 @@
+{% extends "gpatcher/base.html" %}
+
+{% load crispy_forms_tags %}
+
+{% block content %}
+<h1 class="page-header">Remove Carriage Return</h1>
+<div class="col-xs-12 col-sm-9">
+    <form class="form-horizontal" action="/gpatcher/patch/" method="post">
+
+        {% csrf_token %}
+        {% crispy form %}
+        <div class="form-group">
+            <div class="col-sm-offset-1 col-sm-7">
+                <input type="submit" class="btn btn-success"
+                    value="Submit">
+            </div>
+        </div>
+    </form>
+</div>
+
+{% endblock content %}

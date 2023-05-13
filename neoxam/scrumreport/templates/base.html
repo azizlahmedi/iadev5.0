@@ -1,0 +1,58 @@
+{% load staticfiles %}
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Scrum Report</title>
+  <link rel="stylesheet" href="{% static 'js/jquery-ui/jquery-ui.css' %}">
+  <link rel="stylesheet" href="{% static 'css/scrumreport.css' %}">
+  <script src="{% static 'js/jquery-ui/external/jquery/jquery.js' %}"></script>
+  <script src="{% static 'js/jquery-ui/jquery-ui.js' %}"></script>
+  {% block head %}
+  	{% if not user.nxuser.current_scrum %}
+	  <script>
+	  $(function() {
+	    var allScrums = [{% for scrum in scrums %}"{{ scrum.name }}",{% endfor %}];
+          $("#scrums").autocomplete({
+            source: allScrums
+          });
+	  });
+  	  </script>
+  	{% endif %}
+  {% endblock %}
+</head>
+<body>
+<a href="/"><img src="{% static "images/neoxam.png" %}"/></a>
+{% if request.session.nxuser %}
+    <p>User: <b>{{ request.session.nxuser }}</b> | <a href="{% url 'logout' %}">
+      <input type="submit" value="Log out"/></a></p>
+    <p>
+    {% if not request.session.nxuser.current_scrum %}
+        <form method="POST" action="{% url 'current_scrum' %}">
+            {% csrf_token %}
+            <label for="scrums">Please choose a scrum:</label>
+            <input id="scrums" name="name">
+            <input type="submit" value="Choose" />
+        </form>
+
+        <form method="POST" action="{% url 'load_data' %}">
+            {% csrf_token %}
+            Click here to load, or reload, the scrums from JIRA:
+            <input type="hidden" name="resources" value="scrums" />
+            <input type="submit" value="Load" />
+        </form>
+    {% else %}
+        <form method="POST" action="{% url 'current_scrum' %}">
+            {% csrf_token %}
+            Scrum: <b>{{ request.session.nxuser.current_scrum }}</b>
+            <input type="hidden" name="name" value="" />
+            <input type="submit" value="Change" />
+        </form>
+    {% endif %}
+    </p>
+{% endif %}
+
+{% block content %}
+{% endblock %}
+</body>
+</html>

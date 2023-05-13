@@ -1,0 +1,56 @@
+{% extends "factory/base.html" %}
+{% load static %}
+
+{% block content %}
+
+<!-- [ Main Content ] start -->
+<div class="row justify-content-center">
+    <!-- [ badge ] start -->
+    <div class="col-sm-12">
+      <div class="card">
+        <div class="card-header" style="display:flex;justify-content:space-between">
+          <h5>GP4</h5>
+        </div>
+        <div class="card-body">
+          <div class="text-center mb-4">
+            <h4>New Upload</h4>
+          </div>
+          <form action="." method="post">
+            {% csrf_token %}
+            <div class="form-group row">
+              <label for="name" class="col-md-3 col-form-label text-md-right">Language :</label>
+              <div class="col-md-6">
+                <select class="form-control" id="language" name="language">
+                  <option value="" selected disabled class="text-muted">Select Language</option>
+                  <option value="english">English (en)</option>
+                  <option value="espagnol">Espagnol (es)</option>
+                  <option value="italian">Italian (it)</option>
+                  <option value="portuguese">Portuguese (pt)</option>
+                  <option value="chinese">Chinese (zh)</option>
+                  <option value="deutsch">Deutsch (de)</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="uploadFile" class="col-md-3 col-form-label text-md-right">Select files to upload :</label>
+              <div class="col-md-6">
+                <input type="file" id="uploadFile" name="uploadFiles" multiple>
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="procedureName" class="col-md-3 col-form-label text-md-right">Commit comments :</label>
+              <div class="col-md-6">
+                <textarea class="form-control form-control-lg" rows="10" id="CommitComments" name="comments" placeholder="Enter commit comments" rows="4" cols="50"></textarea>
+              </div>
+            </div>
+            <div class="form-group text-center">
+              <button type="submit" class="btn btn-primary" style="background-color: #1DE9B6; border-color: #1DE9B6; border-radius: 20px;">Upload</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- [ badge ] end -->
+  </div>
+  <!-- [ Main Content ] end -->
+{% endblock content %}

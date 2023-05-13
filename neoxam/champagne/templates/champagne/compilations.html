@@ -1,0 +1,51 @@
+{% extends "champagne/base.html" %}
+
+{% load static %}
+
+{% block content %}
+<h1 class="page-header">Compilations</h1>
+<div class="table-responsive">
+    <table class="table table-striped">
+        <thead>
+        <tr>
+            <th>Date</th>
+            <th>Name</th>
+            <th>State</th>
+            <th>Patterns</th>
+            <th>Artifact</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for compilation in compilations %}
+        <tr>
+            <td><a href="{% url 'champagne-compilation' pk=compilation.pk %}">{{ compilation.compiled_at }}</a></td>
+            <td>{{ compilation.procedure_name }}</td>
+            <td>{{ compilation.state }}</td>
+            <td>{{ compilation.patterns }}</td>
+            <td>
+                {% if compilation.artifact_url %}
+                <a href="{{ compilation.artifact_url }}" target="_blank">Download</a>
+                {% else %}
+                &nbsp;
+                {% endif %}
+            </td>
+        </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+</div>
+<nav>
+    <ul class="pager">
+        {% if compilations.has_previous %}
+        <li class="previous">
+            <a href="?page={{ compilations.previous_page_number }}"><span aria-hidden="true">&larr;</span> Newer</a>
+        </li>
+        {% endif %}
+        {% if compilations.has_next %}
+        <li class="next">
+            <a href="?page={{ compilations.next_page_number }}">Older <span aria-hidden="true">&rarr;</span></a>
+        </li>
+        {% endif %}
+    </ul>
+</nav>
+{% endblock %}

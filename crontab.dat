@@ -1,0 +1,2 @@
+*/5 * * * * /neoxam/bin/neoxam run_etl_commit >> /neoxam/var/log/crontab.log 2>&1
+00 21 * * * /neoxam/bin/neoxam update_commit_record >> /neoxam/var/log/crontab.log 2>&1

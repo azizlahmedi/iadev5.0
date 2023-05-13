@@ -1,0 +1,105 @@
+{% extends "adltrack/base.html" %}
+
+{% load static %}
+{% load adltrack_tags %}
+
+{% block content %}
+<h1 class="page-header">Procedure</h1>
+
+<div class="table-responsive">
+    <table class="table table-striped">
+        <tbody>
+        <tr>
+            <td>Version</td>
+            <td>{{ procedure_version.procedure.version }}</td>
+        </tr>
+        <tr>
+            <td>Name</td>
+            <td>{{ procedure_version.procedure.name }}</td>
+        </tr>
+        <tr>
+            <td>Revision</td>
+            <td>{{ procedure_version.commit.revision }}</td>
+        </tr>
+        <tr>
+            <td>Path</td>
+            <td>{{ procedure_version.commit.path }}</td>
+        </tr>
+        <tr>
+            <td>SCM</td>
+            <td><a href="{{ procedure_version.commit|fisheye_revision_url }}" target="_blank">FishEye</a>, <a href="{{ procedure_version.commit|viewvc_revision_url }}" target="_blank">ViewVC</a></td>
+        </tr>
+        <tr>
+            <td>Head</td>
+            <td>{{ procedure_version.head }}</td>
+        </tr>
+        <tr>
+            <td>Analyzed</td>
+            <td>{{ procedure_version.analyzed }}</td>
+        </tr>
+        <tr>
+            <td>Compiled</td>
+            <td>{{ procedure_version.magnum_compiled }}</td>
+        </tr>
+        <tr>
+            <td>Tokens</td>
+            <td>{{ procedure_version.data.count_tokens }}</td>
+        </tr>
+        <tr>
+            <td>&Delta; Tokens</td>
+            <td>{{ procedure_version.data.delta_tokens }}</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+<h2 class="sub-header">Paths</h2>
+
+<div class="table-responsive">
+    <table class="table table-striped">
+        <thead>
+        <tr>
+            <th>Name</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for path in procedure_version.data.paths %}
+        <tr>
+            <td>{{ path }}</td>
+        </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+</div>
+<h2 class="sub-header">Macros</h2>
+
+{% if procedure_version.data.macros|length > 0 %}
+    <div align="right">
+        {% with procedure_version.procedure.name|replace:"/\./_" as procname %}
+            {% with "macro_"|addstr:procname|addstr:"_"|addstr:procedure_version.procedure.version|addstr:"_"|addstr:procedure_version.commit.revision|addstr:".xlsx" as filename %}
+                <a class="btn btn-primary" href="{% url 'get-file' filename %}" role="button">Download {{ filename }}</a>
+            {% endwith %}
+        {% endwith %}
+    </div>
+{% endif %}
+
+<div class="table-responsive">
+    <table class="table table-striped">
+        <thead>
+        <tr>
+            <th>Name</th>
+            <th>Path</th>
+            <th>Calls</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for macro in procedure_version.data.macros %}
+        <tr>
+            <td>{{ macro.name }}</td>
+            <td>{{ macro.path }}</td>
+            <td>{{ macro.count_calls }}</td>
+        </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% endblock %}

@@ -1,0 +1,8 @@
+{% extends "commons/base.html" %}
+
+{% block sidebar %}
+<ul class="nav nav-sidebar">
+<li{% if nav == 'new' %} class="active"{% endif %}><a href="{% url 'delivery-new-delivery' %}">New Delivery</a></li>
+</ul>
+{% endblock %}
+

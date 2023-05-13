@@ -1,0 +1,20 @@
+[
+{
+    "model": "delivery.repository",
+    "pk": 1,
+    "fields": {
+        "name": "Gp3v4 Mono Ref",
+        "slug": "gp3v4monoref",
+        "gp3_url": "http://dotserver.my-nx.com/gp3v4Monoref/repository"
+    }
+},
+{
+    "model": "delivery.repository",
+    "pk": 2,
+    "fields": {
+        "name": "Gp3v4 Dev",
+        "slug": "gp3v4dev",
+        "gp3_url": "http://dotserver.my-nx.com/gp2009/repository"
+    }
+}
+]

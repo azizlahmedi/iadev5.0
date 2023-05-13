@@ -1,0 +1,22 @@
+{% extends "commons/base.html" %}
+
+
+
+
+{% block sidebar %}
+
+<ul class="nav nav-sidebar">
+
+<li{% if nav == 'batches' %} class="active"{% endif %}><a href="{% url 'factory-batches' %}">Gp2016 Batches</a></li>
+
+<li{% if nav == 'new-batch' %} class="active"{% endif %}><a href="{% url 'factory-new-batch' %}">Gp2016 New Batch</a></li>
+
+<li{% if nav == 'compile-legacy' %} class="active"{% endif %}><a href="{% url 'factory-compile-legacy-tasks' %}">Gp2009 Copies</a></li>
+
+<li{% if nav == 'traduction' %} class="active"{% endif %}><a href="{% url 'factory-trads' %}">Download traduction</a></li>
+
+<li{% if nav == 'upload traduction' %} class="active"{% endif %}><a href="{% url 'factory-uplpoad-trads' %}">Upload traduction</a></li>
+
+</ul>
+
+{% endblock %}

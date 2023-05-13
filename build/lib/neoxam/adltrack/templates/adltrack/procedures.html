@@ -1,0 +1,40 @@
+{% extends "adltrack/base.html" %}
+
+{% load static %}
+{% load adltrack_tags %}
+
+{% block content %}
+<h1 class="page-header">Procedures</h1>
+<div class="table-responsive">
+    <table class="table table-striped">
+        <thead>
+        <tr>
+            <th>Version</th>
+            <th>Name</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for procedure in procedures %}
+        <tr>
+            <td><a href="{% url 'adltrack-procedure' version=procedure.version name=procedure.name %}">{{ procedure.version }}</a></td>
+            <td>{{ procedure.name }}</td>
+        </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+</div>
+<nav>
+    <ul class="pager">
+        {% if procedures.has_previous %}
+        <li class="previous">
+            <a href="?page={{ procedures.previous_page_number }}"><span aria-hidden="true">&larr;</span> Previous</a>
+        </li>
+        {% endif %}
+        {% if procedures.has_next %}
+        <li class="next">
+            <a href="?page={{ procedures.next_page_number }}">Next <span aria-hidden="true">&rarr;</span></a>
+        </li>
+        {% endif %}
+    </ul>
+</nav>
+{% endblock %}

@@ -1,0 +1,9 @@
+{% extends "commons/base.html" %}
+
+{% block sidebar %}
+<ul class="nav nav-sidebar">
+<li{% if nav == 'new' %} class="active"{% endif %}><a href="{% url 'champagne-new' %}">New Compilation</a></li>
+<li{% if nav == 'compilations' %} class="active"{% endif %}><a href="{% url 'champagne-compilations' %}">Compilations</a></li>
+</ul>
+{% endblock %}
+

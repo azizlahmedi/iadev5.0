@@ -1,0 +1,66 @@
+{% extends "factory/base.html" %}
+
+{% load static %}
+
+{% block content %}
+<h1 class="page-header">Task</h1>
+
+<div class="table-responsive">
+    <table class="table table-striped">
+        <tbody>
+        <tr>
+            <td>Name</td>
+            <td>{{ task.name }}</td>
+        </tr>
+        <tr>
+            <td>Version</td>
+            <td>{{ task.procedure_revision.procedure.schema_version }}</td>
+        </tr>
+        <tr>
+            <td>Name</td>
+            <td>{{ task.procedure_revision.procedure.name }}</td>
+        </tr>
+        <tr>
+            <td>Revision</td>
+            <td>{{ task.procedure_revision.revision }}</td>
+        </tr>
+        <tr>
+            <td>Resource Revision</td>
+            <td>{{ task.procedure_revision.resource_revision }}</td>
+        </tr>
+        <tr>
+            <td>Created at</td>
+            <td>{{ task.created_at }}</td>
+        </tr>
+        <tr>
+            <td>Started at</td>
+            <td>{{ task.started_at }}</td>
+        </tr>
+        <tr>
+            <td>Completed at</td>
+            <td>{{ task.completed_at }}</td>
+        </tr>
+        <tr>
+            <td>Elapsed (s)</td>
+            <td>{{ task.total_seconds }}</td>
+        </tr>
+        <tr>
+            <td>State</td>
+            <td>{{ task.state }}</td>
+        </tr>
+        {% if task.compiler %}
+        <tr>
+            <td>Compiler</td>
+            <td>{{ task.compiler.version }}</td>
+        </tr>
+        {% endif %}
+        </tbody>
+    </table>
+</div>
+{% if task.output %}
+<h2 class="sub-header">Output</h2>
+<pre>
+    {{ task.output }}
+</pre>
+{% endif %}
+{% endblock %}

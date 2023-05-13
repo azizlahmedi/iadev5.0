@@ -1,0 +1,25 @@
+# See https://docs.djangoproject.com/en/dev/intro/reusable-apps/
+
+include README.md
+include ez_setup.py
+include requirements.txt
+
+recursive-include neoxam/adltrack/static *
+recursive-include neoxam/adltrack/templates *
+
+recursive-include neoxam/angular/static *
+
+recursive-include neoxam/bootstrap/static *
+
+recursive-include neoxam/commons/static *
+recursive-include neoxam/commons/templates *
+
+recursive-include neoxam/fontawesome/static *
+
+recursive-include neoxam/jquery/static *
+
+recursive-include neoxam/scrumcards/static *
+recursive-include neoxam/scrumcards/templates *
+
+recursive-include neoxam/scrumreport/static *
+recursive-include neoxam/scrumreport/templates *

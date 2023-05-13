@@ -1,0 +1,892 @@
+-- Logs begin at Sat 2023-04-22 14:17:16 CET, end at Tue 2023-04-25 05:12:10 CET. --
+Apr 22 14:17:31 myproject systemd[1]: Starting RabbitMQ broker...
+-- Subject: Unit rabbitmq-server.service has begun start-up
+-- Defined-By: systemd
+-- Support: https://access.redhat.com/support
+-- 
+-- Unit rabbitmq-server.service has begun starting up.
+Apr 22 14:17:49 myproject rabbitmq-server[1232]: 2023-04-22 14:17:49.766654+01:00 [notice] <0.44.0> Application syslog exited with reason: stopped
+Apr 22 14:17:49 myproject rabbitmq-server[1232]: 2023-04-22 14:17:49.771195+01:00 [notice] <0.232.0> Logging: switching to configured handler(s); following messages may not be visible in this log output
+Apr 22 14:17:53 myproject rabbitmq-server[1232]:   ##  ##      RabbitMQ 3.11.13
+Apr 22 14:17:53 myproject rabbitmq-server[1232]:   ##  ##
+Apr 22 14:17:53 myproject rabbitmq-server[1232]:   ##########  Copyright (c) 2007-2023 VMware, Inc. or its affiliates.
+Apr 22 14:17:53 myproject rabbitmq-server[1232]:   ######  ##
+Apr 22 14:17:53 myproject rabbitmq-server[1232]:   ##########  Licensed under the MPL 2.0. Website: https://rabbitmq.com
+Apr 22 14:17:53 myproject rabbitmq-server[1232]:   Erlang:      25.3 [jit]
+Apr 22 14:17:53 myproject rabbitmq-server[1232]:   TLS Library: OpenSSL - OpenSSL 1.1.1k  FIPS 25 Mar 2021
+Apr 22 14:17:53 myproject rabbitmq-server[1232]:   Release series support status: supported
+Apr 22 14:17:53 myproject rabbitmq-server[1232]:   Doc guides:  https://rabbitmq.com/documentation.html
+Apr 22 14:17:53 myproject rabbitmq-server[1232]:   Support:     https://rabbitmq.com/contact.html
+Apr 22 14:17:53 myproject rabbitmq-server[1232]:   Tutorials:   https://rabbitmq.com/getstarted.html
+Apr 22 14:17:53 myproject rabbitmq-server[1232]:   Monitoring:  https://rabbitmq.com/monitoring.html
+Apr 22 14:17:53 myproject rabbitmq-server[1232]:   Logs: /var/log/rabbitmq/rabbit@myproject.log
+Apr 22 14:17:53 myproject rabbitmq-server[1232]:         /var/log/rabbitmq/rabbit@myproject_upgrade.log
+Apr 22 14:17:53 myproject rabbitmq-server[1232]:         <stdout>
+Apr 22 14:17:53 myproject rabbitmq-server[1232]:   Config file(s): (none)
+Apr 22 14:17:54 myproject rabbitmq-server[1232]:   Starting broker... completed with 0 plugins.
+Apr 22 14:17:54 myproject systemd[1]: Started RabbitMQ broker.
+-- Subject: Unit rabbitmq-server.service has finished start-up
+-- Defined-By: systemd
+-- Support: https://access.redhat.com/support
+-- 
+-- Unit rabbitmq-server.service has finished starting up.
+-- 
+-- The start-up result is done.
+Apr 23 18:52:17 myproject rabbitmq-server[1232]: Gracefully halting Erlang VM
+Apr 23 18:52:19 myproject systemd[1]: rabbitmq-server.service: Succeeded.
+-- Subject: Unit succeeded
+-- Defined-By: systemd
+-- Support: https://access.redhat.com/support
+-- 
+-- The unit rabbitmq-server.service has successfully entered the 'dead' state.
+Apr 23 18:57:09 myproject systemd[1]: Starting RabbitMQ broker...
+-- Subject: Unit rabbitmq-server.service has begun start-up
+-- Defined-By: systemd
+-- Support: https://access.redhat.com/support
+-- 
+-- Unit rabbitmq-server.service has begun starting up.
+Apr 23 18:57:11 myproject rabbitmq-server[92294]: 2023-04-23 18:57:11.556075+01:00 [notice] <0.44.0> Application syslog exited with reason: stopped
+Apr 23 18:57:11 myproject rabbitmq-server[92294]: 2023-04-23 18:57:11.559751+01:00 [notice] <0.232.0> Logging: switching to configured handler(s); following messages may not be visible in this log output
+Apr 23 18:57:13 myproject rabbitmq-server[92294]:   ##  ##      RabbitMQ 3.11.13
+Apr 23 18:57:13 myproject rabbitmq-server[92294]:   ##  ##
+Apr 23 18:57:13 myproject rabbitmq-server[92294]:   ##########  Copyright (c) 2007-2023 VMware, Inc. or its affiliates.
+Apr 23 18:57:13 myproject rabbitmq-server[92294]:   ######  ##
+Apr 23 18:57:13 myproject rabbitmq-server[92294]:   ##########  Licensed under the MPL 2.0. Website: https://rabbitmq.com
+Apr 23 18:57:13 myproject rabbitmq-server[92294]:   Erlang:      25.3 [jit]
+Apr 23 18:57:13 myproject rabbitmq-server[92294]:   TLS Library: OpenSSL - OpenSSL 1.1.1k  FIPS 25 Mar 2021
+Apr 23 18:57:13 myproject rabbitmq-server[92294]:   Release series support status: supported
+Apr 23 18:57:13 myproject rabbitmq-server[92294]:   Doc guides:  https://rabbitmq.com/documentation.html
+Apr 23 18:57:13 myproject rabbitmq-server[92294]:   Support:     https://rabbitmq.com/contact.html
+Apr 23 18:57:13 myproject rabbitmq-server[92294]:   Tutorials:   https://rabbitmq.com/getstarted.html
+Apr 23 18:57:13 myproject rabbitmq-server[92294]:   Monitoring:  https://rabbitmq.com/monitoring.html
+Apr 23 18:57:13 myproject rabbitmq-server[92294]:   Logs: /var/log/rabbitmq/rabbit@myproject.log
+Apr 23 18:57:13 myproject rabbitmq-server[92294]:         /var/log/rabbitmq/rabbit@myproject_upgrade.log
+Apr 23 18:57:13 myproject rabbitmq-server[92294]:         <stdout>
+Apr 23 18:57:13 myproject rabbitmq-server[92294]:   Config file(s): (none)
+Apr 23 18:57:13 myproject rabbitmq-server[92294]:   Starting broker... completed with 0 plugins.
+Apr 23 18:57:13 myproject systemd[1]: Started RabbitMQ broker.
+-- Subject: Unit rabbitmq-server.service has finished start-up
+-- Defined-By: systemd
+-- Support: https://access.redhat.com/support
+-- 
+-- Unit rabbitmq-server.service has finished starting up.
+-- 
+-- The start-up result is done.
+Apr 25 04:12:13 myproject systemd[1]: Stopping RabbitMQ broker...
+-- Subject: Unit rabbitmq-server.service has begun shutting down
+-- Defined-By: systemd
+-- Support: https://access.redhat.com/support
+-- 
+-- Unit rabbitmq-server.service has begun shutting down.
+Apr 25 04:12:14 myproject rabbitmqctl[198700]: Shutting down RabbitMQ node rabbit@myproject running at PID 92294
+Apr 25 04:12:14 myproject rabbitmq-server[92294]: Gracefully halting Erlang VM
+Apr 25 04:12:14 myproject rabbitmqctl[198700]: Waiting for PID 92294 to terminate
+Apr 25 04:12:15 myproject rabbitmqctl[198700]: RabbitMQ node rabbit@myproject running at PID 92294 successfully shut down
+Apr 25 04:12:15 myproject systemd[1]: rabbitmq-server.service: Succeeded.
+-- Subject: Unit succeeded
+-- Defined-By: systemd
+-- Support: https://access.redhat.com/support
+-- 
+-- The unit rabbitmq-server.service has successfully entered the 'dead' state.
+Apr 25 04:12:15 myproject systemd[1]: Stopped RabbitMQ broker.
+-- Subject: Unit rabbitmq-server.service has finished shutting down
+-- Defined-By: systemd
+-- Support: https://access.redhat.com/support
+-- 
+-- Unit rabbitmq-server.service has finished shutting down.
+Apr 25 05:09:58 myproject systemd[1]: Starting RabbitMQ broker...
+-- Subject: Unit rabbitmq-server.service has begun start-up
+-- Defined-By: systemd
+-- Support: https://access.redhat.com/support
+-- 
+-- Unit rabbitmq-server.service has begun starting up.
+Apr 25 05:09:59 myproject rabbitmq-server[202385]: BOOT FAILED
+Apr 25 05:09:59 myproject rabbitmq-server[202385]: ===========
+Apr 25 05:09:59 myproject rabbitmq-server[202385]: ERROR: could not bind to distribution port 25672, it is in use by another node: rabbit@myproject
+Apr 25 05:09:59 myproject rabbitmq-server[202385]: 2023-04-25 05:09:59.509487+01:00 [error] <0.132.0>
+Apr 25 05:09:59 myproject rabbitmq-server[202385]: 2023-04-25 05:09:59.509487+01:00 [error] <0.132.0> BOOT FAILED
+Apr 25 05:09:59 myproject rabbitmq-server[202385]: 2023-04-25 05:09:59.509487+01:00 [error] <0.132.0> ===========
+Apr 25 05:09:59 myproject rabbitmq-server[202385]: 2023-04-25 05:09:59.509487+01:00 [error] <0.132.0> ERROR: could not bind to distribution port 25672, it is in use by another node: rabbit@myproject
+Apr 25 05:09:59 myproject rabbitmq-server[202385]: 2023-04-25 05:09:59.509487+01:00 [error] <0.132.0>
+Apr 25 05:10:00 myproject rabbitmq-server[202385]: 2023-04-25 05:10:00.519892+01:00 [error] <0.132.0>     supervisor: {local,rabbit_prelaunch_sup}
+Apr 25 05:10:00 myproject rabbitmq-server[202385]: 2023-04-25 05:10:00.519892+01:00 [error] <0.132.0>     errorContext: start_error
+Apr 25 05:10:00 myproject rabbitmq-server[202385]: 2023-04-25 05:10:00.519892+01:00 [error] <0.132.0>     reason: {dist_port_already_used,25672,"rabbit","myproject"}
+Apr 25 05:10:00 myproject rabbitmq-server[202385]: 2023-04-25 05:10:00.519892+01:00 [error] <0.132.0>     offender: [{pid,undefined},
+Apr 25 05:10:00 myproject rabbitmq-server[202385]: 2023-04-25 05:10:00.519892+01:00 [error] <0.132.0>                {id,prelaunch},
+Apr 25 05:10:00 myproject rabbitmq-server[202385]: 2023-04-25 05:10:00.519892+01:00 [error] <0.132.0>                {mfargs,{rabbit_prelaunch,run_prelaunch_first_phase,[]}},
+Apr 25 05:10:00 myproject rabbitmq-server[202385]: 2023-04-25 05:10:00.519892+01:00 [error] <0.132.0>                {restart_type,transient},
+Apr 25 05:10:00 myproject rabbitmq-server[202385]: 2023-04-25 05:10:00.519892+01:00 [error] <0.132.0>                {significant,false},
+Apr 25 05:10:00 myproject rabbitmq-server[202385]: 2023-04-25 05:10:00.519892+01:00 [error] <0.132.0>                {shutdown,5000},
+Apr 25 05:10:00 myproject rabbitmq-server[202385]: 2023-04-25 05:10:00.519892+01:00 [error] <0.132.0>                {child_type,worker}]
+Apr 25 05:10:00 myproject rabbitmq-server[202385]: 2023-04-25 05:10:00.519892+01:00 [error] <0.132.0>
+Apr 25 05:10:00 myproject rabbitmq-server[202385]: 2023-04-25 05:10:00.520215+01:00 [error] <0.130.0>   crasher:
+Apr 25 05:10:00 myproject rabbitmq-server[202385]: 2023-04-25 05:10:00.520215+01:00 [error] <0.130.0>     initial call: application_master:init/4
+Apr 25 05:10:00 myproject rabbitmq-server[202385]: 2023-04-25 05:10:00.520215+01:00 [error] <0.130.0>     pid: <0.130.0>
+Apr 25 05:10:00 myproject rabbitmq-server[202385]: 2023-04-25 05:10:00.520215+01:00 [error] <0.130.0>     registered_name: []
+Apr 25 05:10:00 myproject rabbitmq-server[202385]: 2023-04-25 05:10:00.520215+01:00 [error] <0.130.0>     exception exit: {{shutdown,
+Apr 25 05:10:00 myproject rabbitmq-server[202385]: 2023-04-25 05:10:00.520215+01:00 [error] <0.130.0>                          {failed_to_start_child,prelaunch,
+Apr 25 05:10:00 myproject rabbitmq-server[202385]: 2023-04-25 05:10:00.520215+01:00 [error] <0.130.0>                              {dist_port_already_used,25672,"rabbit",
+Apr 25 05:10:00 myproject rabbitmq-server[202385]: 2023-04-25 05:10:00.520215+01:00 [error] <0.130.0>                                  "myproject"}}},
+Apr 25 05:10:00 myproject rabbitmq-server[202385]: 2023-04-25 05:10:00.520215+01:00 [error] <0.130.0>                      {rabbit_prelaunch_app,start,[normal,[]]}}
+Apr 25 05:10:00 myproject rabbitmq-server[202385]: 2023-04-25 05:10:00.520215+01:00 [error] <0.130.0>       in function  application_master:init/4 (application_master.erl, line 142)
+Apr 25 05:10:00 myproject rabbitmq-server[202385]: 2023-04-25 05:10:00.520215+01:00 [error] <0.130.0>     ancestors: [<0.129.0>]
+Apr 25 05:10:00 myproject rabbitmq-server[202385]: 2023-04-25 05:10:00.520215+01:00 [error] <0.130.0>     message_queue_len: 1
+Apr 25 05:10:00 myproject rabbitmq-server[202385]: 2023-04-25 05:10:00.520215+01:00 [error] <0.130.0>     messages: [{'EXIT',<0.131.0>,normal}]
+Apr 25 05:10:00 myproject rabbitmq-server[202385]: 2023-04-25 05:10:00.520215+01:00 [error] <0.130.0>     links: [<0.129.0>,<0.44.0>]
+Apr 25 05:10:00 myproject rabbitmq-server[202385]: 2023-04-25 05:10:00.520215+01:00 [error] <0.130.0>     dictionary: []
+Apr 25 05:10:00 myproject rabbitmq-server[202385]: 2023-04-25 05:10:00.520215+01:00 [error] <0.130.0>     trap_exit: true
+Apr 25 05:10:00 myproject rabbitmq-server[202385]: 2023-04-25 05:10:00.520215+01:00 [error] <0.130.0>     status: running
+Apr 25 05:10:00 myproject rabbitmq-server[202385]: 2023-04-25 05:10:00.520215+01:00 [error] <0.130.0>     heap_size: 376
+Apr 25 05:10:00 myproject rabbitmq-server[202385]: 2023-04-25 05:10:00.520215+01:00 [error] <0.130.0>     stack_size: 28
+Apr 25 05:10:00 myproject rabbitmq-server[202385]: 2023-04-25 05:10:00.520215+01:00 [error] <0.130.0>     reductions: 163
+Apr 25 05:10:00 myproject rabbitmq-server[202385]: 2023-04-25 05:10:00.520215+01:00 [error] <0.130.0>   neighbours:
+Apr 25 05:10:00 myproject rabbitmq-server[202385]: 2023-04-25 05:10:00.520215+01:00 [error] <0.130.0>
+Apr 25 05:10:00 myproject rabbitmq-server[202385]: 2023-04-25 05:10:00.535217+01:00 [notice] <0.44.0> Application rabbitmq_prelaunch exited with reason: {{shutdown,{failed_to_start_child,prelaunch,{dist_port_already_used,25672,"rabbit","myproject"}}},{rabbit_prelaunch_app,start,[normal,[]]}}
+Apr 25 05:10:02 myproject rabbitmq-server[202385]: {"Kernel pid terminated",application_controller,"{application_start_failure,rabbitmq_prelaunch,{{shutdown,{failed_to_start_child,prelaunch,{dist_port_already_used,25672,\"rabbit\",\"myproject\"}}},{rabbit_prelaunch_app,start,[normal,[]]}}}"}
+Apr 25 05:10:02 myproject rabbitmq-server[202385]: Kernel pid terminated (application_controller) ({application_start_failure,rabbitmq_prelaunch,{{shutdown,{failed_to_start_child,prelaunch,{dist_port_already_used,25672,"rabbit","myproject"}}},{rabbit_prelaunch_app,start,[normal,[]]}}})
+Apr 25 05:10:02 myproject rabbitmq-server[202385]: [1B blob data]
+Apr 25 05:10:02 myproject rabbitmq-server[202385]: Crash dump is being written to: erl_crash.dump...done
+Apr 25 05:10:02 myproject systemd[1]: [0;1;39m[0;1;31m[0;1;39mrabbitmq-server.service: Main process exited, code=exited, status=1/FAILURE[0m
+Apr 25 05:10:02 myproject systemd[1]: [0;1;39m[0;1;31m[0;1;39mrabbitmq-server.service: Failed with result 'exit-code'.[0m
+-- Subject: Unit failed
+-- Defined-By: systemd
+-- Support: https://access.redhat.com/support
+-- 
+-- The unit rabbitmq-server.service has entered the 'failed' state with result 'exit-code'.
+Apr 25 05:10:02 myproject systemd[1]: [0;1;31m[0;1;39m[0;1;31mFailed to start RabbitMQ broker.[0m
+-- Subject: Unit rabbitmq-server.service has failed
+-- Defined-By: systemd
+-- Support: https://access.redhat.com/support
+-- 
+-- Unit rabbitmq-server.service has failed.
+-- 
+-- The result is failed.
+Apr 25 05:10:12 myproject systemd[1]: rabbitmq-server.service: Service RestartSec=10s expired, scheduling restart.
+Apr 25 05:10:12 myproject systemd[1]: rabbitmq-server.service: Scheduled restart job, restart counter is at 1.
+-- Subject: Automatic restarting of a unit has been scheduled
+-- Defined-By: systemd
+-- Support: https://access.redhat.com/support
+-- 
+-- Automatic restarting of the unit rabbitmq-server.service has been scheduled, as the result for
+-- the configured Restart= setting for the unit.
+Apr 25 05:10:12 myproject systemd[1]: Stopped RabbitMQ broker.
+-- Subject: Unit rabbitmq-server.service has finished shutting down
+-- Defined-By: systemd
+-- Support: https://access.redhat.com/support
+-- 
+-- Unit rabbitmq-server.service has finished shutting down.
+Apr 25 05:10:12 myproject systemd[1]: Starting RabbitMQ broker...
+-- Subject: Unit rabbitmq-server.service has begun start-up
+-- Defined-By: systemd
+-- Support: https://access.redhat.com/support
+-- 
+-- Unit rabbitmq-server.service has begun starting up.
+Apr 25 05:10:12 myproject rabbitmq-server[202496]: BOOT FAILED
+Apr 25 05:10:12 myproject rabbitmq-server[202496]: 2023-04-25 05:10:12.989887+01:00 [error] <0.132.0>
+Apr 25 05:10:12 myproject rabbitmq-server[202496]: 2023-04-25 05:10:12.989887+01:00 [error] <0.132.0> BOOT FAILED
+Apr 25 05:10:12 myproject rabbitmq-server[202496]: 2023-04-25 05:10:12.989887+01:00 [error] <0.132.0> ===========
+Apr 25 05:10:12 myproject rabbitmq-server[202496]: 2023-04-25 05:10:12.989887+01:00 [error] <0.132.0> ERROR: could not bind to distribution port 25672, it is in use by another node: rabbit@myproject
+Apr 25 05:10:12 myproject rabbitmq-server[202496]: 2023-04-25 05:10:12.989887+01:00 [error] <0.132.0>
+Apr 25 05:10:12 myproject rabbitmq-server[202496]: ===========
+Apr 25 05:10:12 myproject rabbitmq-server[202496]: ERROR: could not bind to distribution port 25672, it is in use by another node: rabbit@myproject
+Apr 25 05:10:14 myproject rabbitmq-server[202496]: 2023-04-25 05:10:14.000055+01:00 [error] <0.132.0>     supervisor: {local,rabbit_prelaunch_sup}
+Apr 25 05:10:14 myproject rabbitmq-server[202496]: 2023-04-25 05:10:14.000055+01:00 [error] <0.132.0>     errorContext: start_error
+Apr 25 05:10:14 myproject rabbitmq-server[202496]: 2023-04-25 05:10:14.000055+01:00 [error] <0.132.0>     reason: {dist_port_already_used,25672,"rabbit","myproject"}
+Apr 25 05:10:14 myproject rabbitmq-server[202496]: 2023-04-25 05:10:14.000055+01:00 [error] <0.132.0>     offender: [{pid,undefined},
+Apr 25 05:10:14 myproject rabbitmq-server[202496]: 2023-04-25 05:10:14.000055+01:00 [error] <0.132.0>                {id,prelaunch},
+Apr 25 05:10:14 myproject rabbitmq-server[202496]: 2023-04-25 05:10:14.000055+01:00 [error] <0.132.0>                {mfargs,{rabbit_prelaunch,run_prelaunch_first_phase,[]}},
+Apr 25 05:10:14 myproject rabbitmq-server[202496]: 2023-04-25 05:10:14.000055+01:00 [error] <0.132.0>                {restart_type,transient},
+Apr 25 05:10:14 myproject rabbitmq-server[202496]: 2023-04-25 05:10:14.000055+01:00 [error] <0.132.0>                {significant,false},
+Apr 25 05:10:14 myproject rabbitmq-server[202496]: 2023-04-25 05:10:14.000055+01:00 [error] <0.132.0>                {shutdown,5000},
+Apr 25 05:10:14 myproject rabbitmq-server[202496]: 2023-04-25 05:10:14.000055+01:00 [error] <0.132.0>                {child_type,worker}]
+Apr 25 05:10:14 myproject rabbitmq-server[202496]: 2023-04-25 05:10:14.000055+01:00 [error] <0.132.0>
+Apr 25 05:10:14 myproject rabbitmq-server[202496]: 2023-04-25 05:10:14.000840+01:00 [error] <0.130.0>   crasher:
+Apr 25 05:10:14 myproject rabbitmq-server[202496]: 2023-04-25 05:10:14.000840+01:00 [error] <0.130.0>     initial call: application_master:init/4
+Apr 25 05:10:14 myproject rabbitmq-server[202496]: 2023-04-25 05:10:14.000840+01:00 [error] <0.130.0>     pid: <0.130.0>
+Apr 25 05:10:14 myproject rabbitmq-server[202496]: 2023-04-25 05:10:14.000840+01:00 [error] <0.130.0>     registered_name: []
+Apr 25 05:10:14 myproject rabbitmq-server[202496]: 2023-04-25 05:10:14.000840+01:00 [error] <0.130.0>     exception exit: {{shutdown,
+Apr 25 05:10:14 myproject rabbitmq-server[202496]: 2023-04-25 05:10:14.000840+01:00 [error] <0.130.0>                          {failed_to_start_child,prelaunch,
+Apr 25 05:10:14 myproject rabbitmq-server[202496]: 2023-04-25 05:10:14.000840+01:00 [error] <0.130.0>                              {dist_port_already_used,25672,"rabbit",
+Apr 25 05:10:14 myproject rabbitmq-server[202496]: 2023-04-25 05:10:14.000840+01:00 [error] <0.130.0>                                  "myproject"}}},
+Apr 25 05:10:14 myproject rabbitmq-server[202496]: 2023-04-25 05:10:14.000840+01:00 [error] <0.130.0>                      {rabbit_prelaunch_app,start,[normal,[]]}}
+Apr 25 05:10:14 myproject rabbitmq-server[202496]: 2023-04-25 05:10:14.000840+01:00 [error] <0.130.0>       in function  application_master:init/4 (application_master.erl, line 142)
+Apr 25 05:10:14 myproject rabbitmq-server[202496]: 2023-04-25 05:10:14.000840+01:00 [error] <0.130.0>     ancestors: [<0.129.0>]
+Apr 25 05:10:14 myproject rabbitmq-server[202496]: 2023-04-25 05:10:14.000840+01:00 [error] <0.130.0>     message_queue_len: 1
+Apr 25 05:10:14 myproject rabbitmq-server[202496]: 2023-04-25 05:10:14.000840+01:00 [error] <0.130.0>     messages: [{'EXIT',<0.131.0>,normal}]
+Apr 25 05:10:14 myproject rabbitmq-server[202496]: 2023-04-25 05:10:14.000840+01:00 [error] <0.130.0>     links: [<0.129.0>,<0.44.0>]
+Apr 25 05:10:14 myproject rabbitmq-server[202496]: 2023-04-25 05:10:14.000840+01:00 [error] <0.130.0>     dictionary: []
+Apr 25 05:10:14 myproject rabbitmq-server[202496]: 2023-04-25 05:10:14.000840+01:00 [error] <0.130.0>     trap_exit: true
+Apr 25 05:10:14 myproject rabbitmq-server[202496]: 2023-04-25 05:10:14.000840+01:00 [error] <0.130.0>     status: running
+Apr 25 05:10:14 myproject rabbitmq-server[202496]: 2023-04-25 05:10:14.000840+01:00 [error] <0.130.0>     heap_size: 376
+Apr 25 05:10:14 myproject rabbitmq-server[202496]: 2023-04-25 05:10:14.000840+01:00 [error] <0.130.0>     stack_size: 28
+Apr 25 05:10:14 myproject rabbitmq-server[202496]: 2023-04-25 05:10:14.000840+01:00 [error] <0.130.0>     reductions: 163
+Apr 25 05:10:14 myproject rabbitmq-server[202496]: 2023-04-25 05:10:14.000840+01:00 [error] <0.130.0>   neighbours:
+Apr 25 05:10:14 myproject rabbitmq-server[202496]: 2023-04-25 05:10:14.000840+01:00 [error] <0.130.0>
+Apr 25 05:10:14 myproject rabbitmq-server[202496]: 2023-04-25 05:10:14.019437+01:00 [notice] <0.44.0> Application rabbitmq_prelaunch exited with reason: {{shutdown,{failed_to_start_child,prelaunch,{dist_port_already_used,25672,"rabbit","myproject"}}},{rabbit_prelaunch_app,start,[normal,[]]}}
+Apr 25 05:10:15 myproject rabbitmq-server[202496]: {"Kernel pid terminated",application_controller,"{application_start_failure,rabbitmq_prelaunch,{{shutdown,{failed_to_start_child,prelaunch,{dist_port_already_used,25672,\"rabbit\",\"myproject\"}}},{rabbit_prelaunch_app,start,[normal,[]]}}}"}
+Apr 25 05:10:15 myproject rabbitmq-server[202496]: Kernel pid terminated (application_controller) ({application_start_failure,rabbitmq_prelaunch,{{shutdown,{failed_to_start_child,prelaunch,{dist_port_already_used,25672,"rabbit","myproject"}}},{rabbit_prelaunch_app,start,[normal,[]]}}})
+Apr 25 05:10:15 myproject rabbitmq-server[202496]: [1B blob data]
+Apr 25 05:10:15 myproject rabbitmq-server[202496]: Crash dump is being written to: erl_crash.dump...done
+Apr 25 05:10:15 myproject systemd[1]: [0;1;39m[0;1;31m[0;1;39mrabbitmq-server.service: Main process exited, code=exited, status=1/FAILURE[0m
+Apr 25 05:10:15 myproject systemd[1]: [0;1;39m[0;1;31m[0;1;39mrabbitmq-server.service: Failed with result 'exit-code'.[0m
+-- Subject: Unit failed
+-- Defined-By: systemd
+-- Support: https://access.redhat.com/support
+-- 
+-- The unit rabbitmq-server.service has entered the 'failed' state with result 'exit-code'.
+Apr 25 05:10:15 myproject systemd[1]: [0;1;31m[0;1;39m[0;1;31mFailed to start RabbitMQ broker.[0m
+-- Subject: Unit rabbitmq-server.service has failed
+-- Defined-By: systemd
+-- Support: https://access.redhat.com/support
+-- 
+-- Unit rabbitmq-server.service has failed.
+-- 
+-- The result is failed.
+Apr 25 05:10:25 myproject systemd[1]: rabbitmq-server.service: Service RestartSec=10s expired, scheduling restart.
+Apr 25 05:10:25 myproject systemd[1]: rabbitmq-server.service: Scheduled restart job, restart counter is at 2.
+-- Subject: Automatic restarting of a unit has been scheduled
+-- Defined-By: systemd
+-- Support: https://access.redhat.com/support
+-- 
+-- Automatic restarting of the unit rabbitmq-server.service has been scheduled, as the result for
+-- the configured Restart= setting for the unit.
+Apr 25 05:10:25 myproject systemd[1]: Stopped RabbitMQ broker.
+-- Subject: Unit rabbitmq-server.service has finished shutting down
+-- Defined-By: systemd
+-- Support: https://access.redhat.com/support
+-- 
+-- Unit rabbitmq-server.service has finished shutting down.
+Apr 25 05:10:25 myproject systemd[1]: Starting RabbitMQ broker...
+-- Subject: Unit rabbitmq-server.service has begun start-up
+-- Defined-By: systemd
+-- Support: https://access.redhat.com/support
+-- 
+-- Unit rabbitmq-server.service has begun starting up.
+Apr 25 05:10:26 myproject rabbitmq-server[202597]: 2023-04-25 05:10:26.500232+01:00 [error] <0.132.0>
+Apr 25 05:10:26 myproject rabbitmq-server[202597]: 2023-04-25 05:10:26.500232+01:00 [error] <0.132.0> BOOT FAILED
+Apr 25 05:10:26 myproject rabbitmq-server[202597]: 2023-04-25 05:10:26.500232+01:00 [error] <0.132.0> ===========
+Apr 25 05:10:26 myproject rabbitmq-server[202597]: 2023-04-25 05:10:26.500232+01:00 [error] <0.132.0> ERROR: could not bind to distribution port 25672, it is in use by another node: rabbit@myproject
+Apr 25 05:10:26 myproject rabbitmq-server[202597]: 2023-04-25 05:10:26.500232+01:00 [error] <0.132.0>
+Apr 25 05:10:26 myproject rabbitmq-server[202597]: BOOT FAILED
+Apr 25 05:10:26 myproject rabbitmq-server[202597]: ===========
+Apr 25 05:10:26 myproject rabbitmq-server[202597]: ERROR: could not bind to distribution port 25672, it is in use by another node: rabbit@myproject
+Apr 25 05:10:27 myproject rabbitmq-server[202597]: 2023-04-25 05:10:27.512084+01:00 [error] <0.132.0>     supervisor: {local,rabbit_prelaunch_sup}
+Apr 25 05:10:27 myproject rabbitmq-server[202597]: 2023-04-25 05:10:27.512084+01:00 [error] <0.132.0>     errorContext: start_error
+Apr 25 05:10:27 myproject rabbitmq-server[202597]: 2023-04-25 05:10:27.512084+01:00 [error] <0.132.0>     reason: {dist_port_already_used,25672,"rabbit","myproject"}
+Apr 25 05:10:27 myproject rabbitmq-server[202597]: 2023-04-25 05:10:27.512084+01:00 [error] <0.132.0>     offender: [{pid,undefined},
+Apr 25 05:10:27 myproject rabbitmq-server[202597]: 2023-04-25 05:10:27.512084+01:00 [error] <0.132.0>                {id,prelaunch},
+Apr 25 05:10:27 myproject rabbitmq-server[202597]: 2023-04-25 05:10:27.512084+01:00 [error] <0.132.0>                {mfargs,{rabbit_prelaunch,run_prelaunch_first_phase,[]}},
+Apr 25 05:10:27 myproject rabbitmq-server[202597]: 2023-04-25 05:10:27.512084+01:00 [error] <0.132.0>                {restart_type,transient},
+Apr 25 05:10:27 myproject rabbitmq-server[202597]: 2023-04-25 05:10:27.512084+01:00 [error] <0.132.0>                {significant,false},
+Apr 25 05:10:27 myproject rabbitmq-server[202597]: 2023-04-25 05:10:27.512084+01:00 [error] <0.132.0>                {shutdown,5000},
+Apr 25 05:10:27 myproject rabbitmq-server[202597]: 2023-04-25 05:10:27.512084+01:00 [error] <0.132.0>                {child_type,worker}]
+Apr 25 05:10:27 myproject rabbitmq-server[202597]: 2023-04-25 05:10:27.512084+01:00 [error] <0.132.0>
+Apr 25 05:10:27 myproject rabbitmq-server[202597]: 2023-04-25 05:10:27.512701+01:00 [error] <0.130.0>   crasher:
+Apr 25 05:10:27 myproject rabbitmq-server[202597]: 2023-04-25 05:10:27.512701+01:00 [error] <0.130.0>     initial call: application_master:init/4
+Apr 25 05:10:27 myproject rabbitmq-server[202597]: 2023-04-25 05:10:27.512701+01:00 [error] <0.130.0>     pid: <0.130.0>
+Apr 25 05:10:27 myproject rabbitmq-server[202597]: 2023-04-25 05:10:27.512701+01:00 [error] <0.130.0>     registered_name: []
+Apr 25 05:10:27 myproject rabbitmq-server[202597]: 2023-04-25 05:10:27.512701+01:00 [error] <0.130.0>     exception exit: {{shutdown,
+Apr 25 05:10:27 myproject rabbitmq-server[202597]: 2023-04-25 05:10:27.512701+01:00 [error] <0.130.0>                          {failed_to_start_child,prelaunch,
+Apr 25 05:10:27 myproject rabbitmq-server[202597]: 2023-04-25 05:10:27.512701+01:00 [error] <0.130.0>                              {dist_port_already_used,25672,"rabbit",
+Apr 25 05:10:27 myproject rabbitmq-server[202597]: 2023-04-25 05:10:27.512701+01:00 [error] <0.130.0>                                  "myproject"}}},
+Apr 25 05:10:27 myproject rabbitmq-server[202597]: 2023-04-25 05:10:27.512701+01:00 [error] <0.130.0>                      {rabbit_prelaunch_app,start,[normal,[]]}}
+Apr 25 05:10:27 myproject rabbitmq-server[202597]: 2023-04-25 05:10:27.512701+01:00 [error] <0.130.0>       in function  application_master:init/4 (application_master.erl, line 142)
+Apr 25 05:10:27 myproject rabbitmq-server[202597]: 2023-04-25 05:10:27.512701+01:00 [error] <0.130.0>     ancestors: [<0.129.0>]
+Apr 25 05:10:27 myproject rabbitmq-server[202597]: 2023-04-25 05:10:27.512701+01:00 [error] <0.130.0>     message_queue_len: 1
+Apr 25 05:10:27 myproject rabbitmq-server[202597]: 2023-04-25 05:10:27.512701+01:00 [error] <0.130.0>     messages: [{'EXIT',<0.131.0>,normal}]
+Apr 25 05:10:27 myproject rabbitmq-server[202597]: 2023-04-25 05:10:27.512701+01:00 [error] <0.130.0>     links: [<0.129.0>,<0.44.0>]
+Apr 25 05:10:27 myproject rabbitmq-server[202597]: 2023-04-25 05:10:27.512701+01:00 [error] <0.130.0>     dictionary: []
+Apr 25 05:10:27 myproject rabbitmq-server[202597]: 2023-04-25 05:10:27.512701+01:00 [error] <0.130.0>     trap_exit: true
+Apr 25 05:10:27 myproject rabbitmq-server[202597]: 2023-04-25 05:10:27.512701+01:00 [error] <0.130.0>     status: running
+Apr 25 05:10:27 myproject rabbitmq-server[202597]: 2023-04-25 05:10:27.512701+01:00 [error] <0.130.0>     heap_size: 376
+Apr 25 05:10:27 myproject rabbitmq-server[202597]: 2023-04-25 05:10:27.512701+01:00 [error] <0.130.0>     stack_size: 28
+Apr 25 05:10:27 myproject rabbitmq-server[202597]: 2023-04-25 05:10:27.512701+01:00 [error] <0.130.0>     reductions: 163
+Apr 25 05:10:27 myproject rabbitmq-server[202597]: 2023-04-25 05:10:27.512701+01:00 [error] <0.130.0>   neighbours:
+Apr 25 05:10:27 myproject rabbitmq-server[202597]: 2023-04-25 05:10:27.512701+01:00 [error] <0.130.0>
+Apr 25 05:10:27 myproject rabbitmq-server[202597]: 2023-04-25 05:10:27.535497+01:00 [notice] <0.44.0> Application rabbitmq_prelaunch exited with reason: {{shutdown,{failed_to_start_child,prelaunch,{dist_port_already_used,25672,"rabbit","myproject"}}},{rabbit_prelaunch_app,start,[normal,[]]}}
+Apr 25 05:10:29 myproject rabbitmq-server[202597]: {"Kernel pid terminated",application_controller,"{application_start_failure,rabbitmq_prelaunch,{{shutdown,{failed_to_start_child,prelaunch,{dist_port_already_used,25672,\"rabbit\",\"myproject\"}}},{rabbit_prelaunch_app,start,[normal,[]]}}}"}
+Apr 25 05:10:29 myproject rabbitmq-server[202597]: Kernel pid terminated (application_controller) ({application_start_failure,rabbitmq_prelaunch,{{shutdown,{failed_to_start_child,prelaunch,{dist_port_already_used,25672,"rabbit","myproject"}}},{rabbit_prelaunch_app,start,[normal,[]]}}})
+Apr 25 05:10:29 myproject rabbitmq-server[202597]: [1B blob data]
+Apr 25 05:10:29 myproject rabbitmq-server[202597]: Crash dump is being written to: erl_crash.dump...done
+Apr 25 05:10:29 myproject systemd[1]: [0;1;39m[0;1;31m[0;1;39mrabbitmq-server.service: Main process exited, code=exited, status=1/FAILURE[0m
+Apr 25 05:10:29 myproject systemd[1]: [0;1;39m[0;1;31m[0;1;39mrabbitmq-server.service: Failed with result 'exit-code'.[0m
+-- Subject: Unit failed
+-- Defined-By: systemd
+-- Support: https://access.redhat.com/support
+-- 
+-- The unit rabbitmq-server.service has entered the 'failed' state with result 'exit-code'.
+Apr 25 05:10:29 myproject systemd[1]: [0;1;31m[0;1;39m[0;1;31mFailed to start RabbitMQ broker.[0m
+-- Subject: Unit rabbitmq-server.service has failed
+-- Defined-By: systemd
+-- Support: https://access.redhat.com/support
+-- 
+-- Unit rabbitmq-server.service has failed.
+-- 
+-- The result is failed.
+Apr 25 05:10:39 myproject systemd[1]: rabbitmq-server.service: Service RestartSec=10s expired, scheduling restart.
+Apr 25 05:10:39 myproject systemd[1]: rabbitmq-server.service: Scheduled restart job, restart counter is at 3.
+-- Subject: Automatic restarting of a unit has been scheduled
+-- Defined-By: systemd
+-- Support: https://access.redhat.com/support
+-- 
+-- Automatic restarting of the unit rabbitmq-server.service has been scheduled, as the result for
+-- the configured Restart= setting for the unit.
+Apr 25 05:10:39 myproject systemd[1]: Stopped RabbitMQ broker.
+-- Subject: Unit rabbitmq-server.service has finished shutting down
+-- Defined-By: systemd
+-- Support: https://access.redhat.com/support
+-- 
+-- Unit rabbitmq-server.service has finished shutting down.
+Apr 25 05:10:39 myproject systemd[1]: Starting RabbitMQ broker...
+-- Subject: Unit rabbitmq-server.service has begun start-up
+-- Defined-By: systemd
+-- Support: https://access.redhat.com/support
+-- 
+-- Unit rabbitmq-server.service has begun starting up.
+Apr 25 05:10:39 myproject rabbitmq-server[202669]: BOOT FAILED
+Apr 25 05:10:39 myproject rabbitmq-server[202669]: ===========
+Apr 25 05:10:39 myproject rabbitmq-server[202669]: ERROR: could not bind to distribution port 25672, it is in use by another node: rabbit@myproject
+Apr 25 05:10:39 myproject rabbitmq-server[202669]: 2023-04-25 05:10:39.964347+01:00 [error] <0.132.0>
+Apr 25 05:10:39 myproject rabbitmq-server[202669]: 2023-04-25 05:10:39.964347+01:00 [error] <0.132.0> BOOT FAILED
+Apr 25 05:10:39 myproject rabbitmq-server[202669]: 2023-04-25 05:10:39.964347+01:00 [error] <0.132.0> ===========
+Apr 25 05:10:39 myproject rabbitmq-server[202669]: 2023-04-25 05:10:39.964347+01:00 [error] <0.132.0> ERROR: could not bind to distribution port 25672, it is in use by another node: rabbit@myproject
+Apr 25 05:10:39 myproject rabbitmq-server[202669]: 2023-04-25 05:10:39.964347+01:00 [error] <0.132.0>
+Apr 25 05:10:40 myproject rabbitmq-server[202669]: 2023-04-25 05:10:40.974939+01:00 [error] <0.132.0>     supervisor: {local,rabbit_prelaunch_sup}
+Apr 25 05:10:40 myproject rabbitmq-server[202669]: 2023-04-25 05:10:40.974939+01:00 [error] <0.132.0>     errorContext: start_error
+Apr 25 05:10:40 myproject rabbitmq-server[202669]: 2023-04-25 05:10:40.974939+01:00 [error] <0.132.0>     reason: {dist_port_already_used,25672,"rabbit","myproject"}
+Apr 25 05:10:40 myproject rabbitmq-server[202669]: 2023-04-25 05:10:40.974939+01:00 [error] <0.132.0>     offender: [{pid,undefined},
+Apr 25 05:10:40 myproject rabbitmq-server[202669]: 2023-04-25 05:10:40.974939+01:00 [error] <0.132.0>                {id,prelaunch},
+Apr 25 05:10:40 myproject rabbitmq-server[202669]: 2023-04-25 05:10:40.974939+01:00 [error] <0.132.0>                {mfargs,{rabbit_prelaunch,run_prelaunch_first_phase,[]}},
+Apr 25 05:10:40 myproject rabbitmq-server[202669]: 2023-04-25 05:10:40.974939+01:00 [error] <0.132.0>                {restart_type,transient},
+Apr 25 05:10:40 myproject rabbitmq-server[202669]: 2023-04-25 05:10:40.974939+01:00 [error] <0.132.0>                {significant,false},
+Apr 25 05:10:40 myproject rabbitmq-server[202669]: 2023-04-25 05:10:40.974939+01:00 [error] <0.132.0>                {shutdown,5000},
+Apr 25 05:10:40 myproject rabbitmq-server[202669]: 2023-04-25 05:10:40.974939+01:00 [error] <0.132.0>                {child_type,worker}]
+Apr 25 05:10:40 myproject rabbitmq-server[202669]: 2023-04-25 05:10:40.974939+01:00 [error] <0.132.0>
+Apr 25 05:10:40 myproject rabbitmq-server[202669]: 2023-04-25 05:10:40.975874+01:00 [error] <0.130.0>   crasher:
+Apr 25 05:10:40 myproject rabbitmq-server[202669]: 2023-04-25 05:10:40.975874+01:00 [error] <0.130.0>     initial call: application_master:init/4
+Apr 25 05:10:40 myproject rabbitmq-server[202669]: 2023-04-25 05:10:40.975874+01:00 [error] <0.130.0>     pid: <0.130.0>
+Apr 25 05:10:40 myproject rabbitmq-server[202669]: 2023-04-25 05:10:40.975874+01:00 [error] <0.130.0>     registered_name: []
+Apr 25 05:10:40 myproject rabbitmq-server[202669]: 2023-04-25 05:10:40.975874+01:00 [error] <0.130.0>     exception exit: {{shutdown,
+Apr 25 05:10:40 myproject rabbitmq-server[202669]: 2023-04-25 05:10:40.975874+01:00 [error] <0.130.0>                          {failed_to_start_child,prelaunch,
+Apr 25 05:10:40 myproject rabbitmq-server[202669]: 2023-04-25 05:10:40.975874+01:00 [error] <0.130.0>                              {dist_port_already_used,25672,"rabbit",
+Apr 25 05:10:40 myproject rabbitmq-server[202669]: 2023-04-25 05:10:40.975874+01:00 [error] <0.130.0>                                  "myproject"}}},
+Apr 25 05:10:40 myproject rabbitmq-server[202669]: 2023-04-25 05:10:40.975874+01:00 [error] <0.130.0>                      {rabbit_prelaunch_app,start,[normal,[]]}}
+Apr 25 05:10:40 myproject rabbitmq-server[202669]: 2023-04-25 05:10:40.975874+01:00 [error] <0.130.0>       in function  application_master:init/4 (application_master.erl, line 142)
+Apr 25 05:10:40 myproject rabbitmq-server[202669]: 2023-04-25 05:10:40.975874+01:00 [error] <0.130.0>     ancestors: [<0.129.0>]
+Apr 25 05:10:40 myproject rabbitmq-server[202669]: 2023-04-25 05:10:40.975874+01:00 [error] <0.130.0>     message_queue_len: 1
+Apr 25 05:10:40 myproject rabbitmq-server[202669]: 2023-04-25 05:10:40.975874+01:00 [error] <0.130.0>     messages: [{'EXIT',<0.131.0>,normal}]
+Apr 25 05:10:40 myproject rabbitmq-server[202669]: 2023-04-25 05:10:40.975874+01:00 [error] <0.130.0>     links: [<0.129.0>,<0.44.0>]
+Apr 25 05:10:40 myproject rabbitmq-server[202669]: 2023-04-25 05:10:40.975874+01:00 [error] <0.130.0>     dictionary: []
+Apr 25 05:10:40 myproject rabbitmq-server[202669]: 2023-04-25 05:10:40.975874+01:00 [error] <0.130.0>     trap_exit: true
+Apr 25 05:10:40 myproject rabbitmq-server[202669]: 2023-04-25 05:10:40.975874+01:00 [error] <0.130.0>     status: running
+Apr 25 05:10:40 myproject rabbitmq-server[202669]: 2023-04-25 05:10:40.975874+01:00 [error] <0.130.0>     heap_size: 376
+Apr 25 05:10:40 myproject rabbitmq-server[202669]: 2023-04-25 05:10:40.975874+01:00 [error] <0.130.0>     stack_size: 28
+Apr 25 05:10:40 myproject rabbitmq-server[202669]: 2023-04-25 05:10:40.975874+01:00 [error] <0.130.0>     reductions: 163
+Apr 25 05:10:40 myproject rabbitmq-server[202669]: 2023-04-25 05:10:40.975874+01:00 [error] <0.130.0>   neighbours:
+Apr 25 05:10:40 myproject rabbitmq-server[202669]: 2023-04-25 05:10:40.975874+01:00 [error] <0.130.0>
+Apr 25 05:10:40 myproject rabbitmq-server[202669]: 2023-04-25 05:10:40.993592+01:00 [notice] <0.44.0> Application rabbitmq_prelaunch exited with reason: {{shutdown,{failed_to_start_child,prelaunch,{dist_port_already_used,25672,"rabbit","myproject"}}},{rabbit_prelaunch_app,start,[normal,[]]}}
+Apr 25 05:10:42 myproject rabbitmq-server[202669]: {"Kernel pid terminated",application_controller,"{application_start_failure,rabbitmq_prelaunch,{{shutdown,{failed_to_start_child,prelaunch,{dist_port_already_used,25672,\"rabbit\",\"myproject\"}}},{rabbit_prelaunch_app,start,[normal,[]]}}}"}
+Apr 25 05:10:42 myproject rabbitmq-server[202669]: Kernel pid terminated (application_controller) ({application_start_failure,rabbitmq_prelaunch,{{shutdown,{failed_to_start_child,prelaunch,{dist_port_already_used,25672,"rabbit","myproject"}}},{rabbit_prelaunch_app,start,[normal,[]]}}})
+Apr 25 05:10:42 myproject rabbitmq-server[202669]: [1B blob data]
+Apr 25 05:10:42 myproject rabbitmq-server[202669]: Crash dump is being written to: erl_crash.dump...done
+Apr 25 05:10:42 myproject systemd[1]: [0;1;39m[0;1;31m[0;1;39mrabbitmq-server.service: Main process exited, code=exited, status=1/FAILURE[0m
+Apr 25 05:10:42 myproject systemd[1]: [0;1;39m[0;1;31m[0;1;39mrabbitmq-server.service: Failed with result 'exit-code'.[0m
+-- Subject: Unit failed
+-- Defined-By: systemd
+-- Support: https://access.redhat.com/support
+-- 
+-- The unit rabbitmq-server.service has entered the 'failed' state with result 'exit-code'.
+Apr 25 05:10:42 myproject systemd[1]: [0;1;31m[0;1;39m[0;1;31mFailed to start RabbitMQ broker.[0m
+-- Subject: Unit rabbitmq-server.service has failed
+-- Defined-By: systemd
+-- Support: https://access.redhat.com/support
+-- 
+-- Unit rabbitmq-server.service has failed.
+-- 
+-- The result is failed.
+Apr 25 05:10:52 myproject systemd[1]: rabbitmq-server.service: Service RestartSec=10s expired, scheduling restart.
+Apr 25 05:10:52 myproject systemd[1]: rabbitmq-server.service: Scheduled restart job, restart counter is at 4.
+-- Subject: Automatic restarting of a unit has been scheduled
+-- Defined-By: systemd
+-- Support: https://access.redhat.com/support
+-- 
+-- Automatic restarting of the unit rabbitmq-server.service has been scheduled, as the result for
+-- the configured Restart= setting for the unit.
+Apr 25 05:10:52 myproject systemd[1]: Stopped RabbitMQ broker.
+-- Subject: Unit rabbitmq-server.service has finished shutting down
+-- Defined-By: systemd
+-- Support: https://access.redhat.com/support
+-- 
+-- Unit rabbitmq-server.service has finished shutting down.
+Apr 25 05:10:52 myproject systemd[1]: Starting RabbitMQ broker...
+-- Subject: Unit rabbitmq-server.service has begun start-up
+-- Defined-By: systemd
+-- Support: https://access.redhat.com/support
+-- 
+-- Unit rabbitmq-server.service has begun starting up.
+Apr 25 05:10:53 myproject rabbitmq-server[202741]: BOOT FAILED
+Apr 25 05:10:53 myproject rabbitmq-server[202741]: 2023-04-25 05:10:53.483528+01:00 [error] <0.132.0>
+Apr 25 05:10:53 myproject rabbitmq-server[202741]: 2023-04-25 05:10:53.483528+01:00 [error] <0.132.0> BOOT FAILED
+Apr 25 05:10:53 myproject rabbitmq-server[202741]: 2023-04-25 05:10:53.483528+01:00 [error] <0.132.0> ===========
+Apr 25 05:10:53 myproject rabbitmq-server[202741]: 2023-04-25 05:10:53.483528+01:00 [error] <0.132.0> ERROR: could not bind to distribution port 25672, it is in use by another node: rabbit@myproject
+Apr 25 05:10:53 myproject rabbitmq-server[202741]: 2023-04-25 05:10:53.483528+01:00 [error] <0.132.0>
+Apr 25 05:10:53 myproject rabbitmq-server[202741]: ===========
+Apr 25 05:10:53 myproject rabbitmq-server[202741]: ERROR: could not bind to distribution port 25672, it is in use by another node: rabbit@myproject
+Apr 25 05:10:54 myproject rabbitmq-server[202741]: 2023-04-25 05:10:54.494520+01:00 [error] <0.132.0>     supervisor: {local,rabbit_prelaunch_sup}
+Apr 25 05:10:54 myproject rabbitmq-server[202741]: 2023-04-25 05:10:54.494520+01:00 [error] <0.132.0>     errorContext: start_error
+Apr 25 05:10:54 myproject rabbitmq-server[202741]: 2023-04-25 05:10:54.494520+01:00 [error] <0.132.0>     reason: {dist_port_already_used,25672,"rabbit","myproject"}
+Apr 25 05:10:54 myproject rabbitmq-server[202741]: 2023-04-25 05:10:54.494520+01:00 [error] <0.132.0>     offender: [{pid,undefined},
+Apr 25 05:10:54 myproject rabbitmq-server[202741]: 2023-04-25 05:10:54.494520+01:00 [error] <0.132.0>                {id,prelaunch},
+Apr 25 05:10:54 myproject rabbitmq-server[202741]: 2023-04-25 05:10:54.494520+01:00 [error] <0.132.0>                {mfargs,{rabbit_prelaunch,run_prelaunch_first_phase,[]}},
+Apr 25 05:10:54 myproject rabbitmq-server[202741]: 2023-04-25 05:10:54.494520+01:00 [error] <0.132.0>                {restart_type,transient},
+Apr 25 05:10:54 myproject rabbitmq-server[202741]: 2023-04-25 05:10:54.494520+01:00 [error] <0.132.0>                {significant,false},
+Apr 25 05:10:54 myproject rabbitmq-server[202741]: 2023-04-25 05:10:54.494520+01:00 [error] <0.132.0>                {shutdown,5000},
+Apr 25 05:10:54 myproject rabbitmq-server[202741]: 2023-04-25 05:10:54.494520+01:00 [error] <0.132.0>                {child_type,worker}]
+Apr 25 05:10:54 myproject rabbitmq-server[202741]: 2023-04-25 05:10:54.494520+01:00 [error] <0.132.0>
+Apr 25 05:10:54 myproject rabbitmq-server[202741]: 2023-04-25 05:10:54.495302+01:00 [error] <0.130.0>   crasher:
+Apr 25 05:10:54 myproject rabbitmq-server[202741]: 2023-04-25 05:10:54.495302+01:00 [error] <0.130.0>     initial call: application_master:init/4
+Apr 25 05:10:54 myproject rabbitmq-server[202741]: 2023-04-25 05:10:54.495302+01:00 [error] <0.130.0>     pid: <0.130.0>
+Apr 25 05:10:54 myproject rabbitmq-server[202741]: 2023-04-25 05:10:54.495302+01:00 [error] <0.130.0>     registered_name: []
+Apr 25 05:10:54 myproject rabbitmq-server[202741]: 2023-04-25 05:10:54.495302+01:00 [error] <0.130.0>     exception exit: {{shutdown,
+Apr 25 05:10:54 myproject rabbitmq-server[202741]: 2023-04-25 05:10:54.495302+01:00 [error] <0.130.0>                          {failed_to_start_child,prelaunch,
+Apr 25 05:10:54 myproject rabbitmq-server[202741]: 2023-04-25 05:10:54.495302+01:00 [error] <0.130.0>                              {dist_port_already_used,25672,"rabbit",
+Apr 25 05:10:54 myproject rabbitmq-server[202741]: 2023-04-25 05:10:54.495302+01:00 [error] <0.130.0>                                  "myproject"}}},
+Apr 25 05:10:54 myproject rabbitmq-server[202741]: 2023-04-25 05:10:54.495302+01:00 [error] <0.130.0>                      {rabbit_prelaunch_app,start,[normal,[]]}}
+Apr 25 05:10:54 myproject rabbitmq-server[202741]: 2023-04-25 05:10:54.495302+01:00 [error] <0.130.0>       in function  application_master:init/4 (application_master.erl, line 142)
+Apr 25 05:10:54 myproject rabbitmq-server[202741]: 2023-04-25 05:10:54.495302+01:00 [error] <0.130.0>     ancestors: [<0.129.0>]
+Apr 25 05:10:54 myproject rabbitmq-server[202741]: 2023-04-25 05:10:54.495302+01:00 [error] <0.130.0>     message_queue_len: 1
+Apr 25 05:10:54 myproject rabbitmq-server[202741]: 2023-04-25 05:10:54.495302+01:00 [error] <0.130.0>     messages: [{'EXIT',<0.131.0>,normal}]
+Apr 25 05:10:54 myproject rabbitmq-server[202741]: 2023-04-25 05:10:54.495302+01:00 [error] <0.130.0>     links: [<0.129.0>,<0.44.0>]
+Apr 25 05:10:54 myproject rabbitmq-server[202741]: 2023-04-25 05:10:54.495302+01:00 [error] <0.130.0>     dictionary: []
+Apr 25 05:10:54 myproject rabbitmq-server[202741]: 2023-04-25 05:10:54.495302+01:00 [error] <0.130.0>     trap_exit: true
+Apr 25 05:10:54 myproject rabbitmq-server[202741]: 2023-04-25 05:10:54.495302+01:00 [error] <0.130.0>     status: running
+Apr 25 05:10:54 myproject rabbitmq-server[202741]: 2023-04-25 05:10:54.495302+01:00 [error] <0.130.0>     heap_size: 376
+Apr 25 05:10:54 myproject rabbitmq-server[202741]: 2023-04-25 05:10:54.495302+01:00 [error] <0.130.0>     stack_size: 28
+Apr 25 05:10:54 myproject rabbitmq-server[202741]: 2023-04-25 05:10:54.495302+01:00 [error] <0.130.0>     reductions: 163
+Apr 25 05:10:54 myproject rabbitmq-server[202741]: 2023-04-25 05:10:54.495302+01:00 [error] <0.130.0>   neighbours:
+Apr 25 05:10:54 myproject rabbitmq-server[202741]: 2023-04-25 05:10:54.495302+01:00 [error] <0.130.0>
+Apr 25 05:10:54 myproject rabbitmq-server[202741]: 2023-04-25 05:10:54.514634+01:00 [notice] <0.44.0> Application rabbitmq_prelaunch exited with reason: {{shutdown,{failed_to_start_child,prelaunch,{dist_port_already_used,25672,"rabbit","myproject"}}},{rabbit_prelaunch_app,start,[normal,[]]}}
+Apr 25 05:10:56 myproject rabbitmq-server[202741]: {"Kernel pid terminated",application_controller,"{application_start_failure,rabbitmq_prelaunch,{{shutdown,{failed_to_start_child,prelaunch,{dist_port_already_used,25672,\"rabbit\",\"myproject\"}}},{rabbit_prelaunch_app,start,[normal,[]]}}}"}
+Apr 25 05:10:56 myproject rabbitmq-server[202741]: Kernel pid terminated (application_controller) ({application_start_failure,rabbitmq_prelaunch,{{shutdown,{failed_to_start_child,prelaunch,{dist_port_already_used,25672,"rabbit","myproject"}}},{rabbit_prelaunch_app,start,[normal,[]]}}})
+Apr 25 05:10:56 myproject rabbitmq-server[202741]: [1B blob data]
+Apr 25 05:10:56 myproject rabbitmq-server[202741]: Crash dump is being written to: erl_crash.dump...done
+Apr 25 05:10:56 myproject systemd[1]: [0;1;39m[0;1;31m[0;1;39mrabbitmq-server.service: Main process exited, code=exited, status=1/FAILURE[0m
+Apr 25 05:10:56 myproject systemd[1]: [0;1;39m[0;1;31m[0;1;39mrabbitmq-server.service: Failed with result 'exit-code'.[0m
+-- Subject: Unit failed
+-- Defined-By: systemd
+-- Support: https://access.redhat.com/support
+-- 
+-- The unit rabbitmq-server.service has entered the 'failed' state with result 'exit-code'.
+Apr 25 05:10:56 myproject systemd[1]: [0;1;31m[0;1;39m[0;1;31mFailed to start RabbitMQ broker.[0m
+-- Subject: Unit rabbitmq-server.service has failed
+-- Defined-By: systemd
+-- Support: https://access.redhat.com/support
+-- 
+-- Unit rabbitmq-server.service has failed.
+-- 
+-- The result is failed.
+Apr 25 05:11:06 myproject systemd[1]: rabbitmq-server.service: Service RestartSec=10s expired, scheduling restart.
+Apr 25 05:11:06 myproject systemd[1]: rabbitmq-server.service: Scheduled restart job, restart counter is at 5.
+-- Subject: Automatic restarting of a unit has been scheduled
+-- Defined-By: systemd
+-- Support: https://access.redhat.com/support
+-- 
+-- Automatic restarting of the unit rabbitmq-server.service has been scheduled, as the result for
+-- the configured Restart= setting for the unit.
+Apr 25 05:11:06 myproject systemd[1]: Stopped RabbitMQ broker.
+-- Subject: Unit rabbitmq-server.service has finished shutting down
+-- Defined-By: systemd
+-- Support: https://access.redhat.com/support
+-- 
+-- Unit rabbitmq-server.service has finished shutting down.
+Apr 25 05:11:06 myproject systemd[1]: Starting RabbitMQ broker...
+-- Subject: Unit rabbitmq-server.service has begun start-up
+-- Defined-By: systemd
+-- Support: https://access.redhat.com/support
+-- 
+-- Unit rabbitmq-server.service has begun starting up.
+Apr 25 05:11:06 myproject rabbitmq-server[202847]: 2023-04-25 05:11:06.948708+01:00 [error] <0.132.0>
+Apr 25 05:11:06 myproject rabbitmq-server[202847]: 2023-04-25 05:11:06.948708+01:00 [error] <0.132.0> BOOT FAILED
+Apr 25 05:11:06 myproject rabbitmq-server[202847]: 2023-04-25 05:11:06.948708+01:00 [error] <0.132.0> ===========
+Apr 25 05:11:06 myproject rabbitmq-server[202847]: 2023-04-25 05:11:06.948708+01:00 [error] <0.132.0> ERROR: could not bind to distribution port 25672, it is in use by another node: rabbit@myproject
+Apr 25 05:11:06 myproject rabbitmq-server[202847]: 2023-04-25 05:11:06.948708+01:00 [error] <0.132.0>
+Apr 25 05:11:06 myproject rabbitmq-server[202847]: BOOT FAILED
+Apr 25 05:11:06 myproject rabbitmq-server[202847]: ===========
+Apr 25 05:11:06 myproject rabbitmq-server[202847]: ERROR: could not bind to distribution port 25672, it is in use by another node: rabbit@myproject
+Apr 25 05:11:07 myproject rabbitmq-server[202847]: 2023-04-25 05:11:07.958614+01:00 [error] <0.132.0>     supervisor: {local,rabbit_prelaunch_sup}
+Apr 25 05:11:07 myproject rabbitmq-server[202847]: 2023-04-25 05:11:07.958614+01:00 [error] <0.132.0>     errorContext: start_error
+Apr 25 05:11:07 myproject rabbitmq-server[202847]: 2023-04-25 05:11:07.958614+01:00 [error] <0.132.0>     reason: {dist_port_already_used,25672,"rabbit","myproject"}
+Apr 25 05:11:07 myproject rabbitmq-server[202847]: 2023-04-25 05:11:07.958614+01:00 [error] <0.132.0>     offender: [{pid,undefined},
+Apr 25 05:11:07 myproject rabbitmq-server[202847]: 2023-04-25 05:11:07.958614+01:00 [error] <0.132.0>                {id,prelaunch},
+Apr 25 05:11:07 myproject rabbitmq-server[202847]: 2023-04-25 05:11:07.958614+01:00 [error] <0.132.0>                {mfargs,{rabbit_prelaunch,run_prelaunch_first_phase,[]}},
+Apr 25 05:11:07 myproject rabbitmq-server[202847]: 2023-04-25 05:11:07.958614+01:00 [error] <0.132.0>                {restart_type,transient},
+Apr 25 05:11:07 myproject rabbitmq-server[202847]: 2023-04-25 05:11:07.958614+01:00 [error] <0.132.0>                {significant,false},
+Apr 25 05:11:07 myproject rabbitmq-server[202847]: 2023-04-25 05:11:07.958614+01:00 [error] <0.132.0>                {shutdown,5000},
+Apr 25 05:11:07 myproject rabbitmq-server[202847]: 2023-04-25 05:11:07.958614+01:00 [error] <0.132.0>                {child_type,worker}]
+Apr 25 05:11:07 myproject rabbitmq-server[202847]: 2023-04-25 05:11:07.958614+01:00 [error] <0.132.0>
+Apr 25 05:11:07 myproject rabbitmq-server[202847]: 2023-04-25 05:11:07.959338+01:00 [error] <0.130.0>   crasher:
+Apr 25 05:11:07 myproject rabbitmq-server[202847]: 2023-04-25 05:11:07.959338+01:00 [error] <0.130.0>     initial call: application_master:init/4
+Apr 25 05:11:07 myproject rabbitmq-server[202847]: 2023-04-25 05:11:07.959338+01:00 [error] <0.130.0>     pid: <0.130.0>
+Apr 25 05:11:07 myproject rabbitmq-server[202847]: 2023-04-25 05:11:07.959338+01:00 [error] <0.130.0>     registered_name: []
+Apr 25 05:11:07 myproject rabbitmq-server[202847]: 2023-04-25 05:11:07.959338+01:00 [error] <0.130.0>     exception exit: {{shutdown,
+Apr 25 05:11:07 myproject rabbitmq-server[202847]: 2023-04-25 05:11:07.959338+01:00 [error] <0.130.0>                          {failed_to_start_child,prelaunch,
+Apr 25 05:11:07 myproject rabbitmq-server[202847]: 2023-04-25 05:11:07.959338+01:00 [error] <0.130.0>                              {dist_port_already_used,25672,"rabbit",
+Apr 25 05:11:07 myproject rabbitmq-server[202847]: 2023-04-25 05:11:07.959338+01:00 [error] <0.130.0>                                  "myproject"}}},
+Apr 25 05:11:07 myproject rabbitmq-server[202847]: 2023-04-25 05:11:07.959338+01:00 [error] <0.130.0>                      {rabbit_prelaunch_app,start,[normal,[]]}}
+Apr 25 05:11:07 myproject rabbitmq-server[202847]: 2023-04-25 05:11:07.959338+01:00 [error] <0.130.0>       in function  application_master:init/4 (application_master.erl, line 142)
+Apr 25 05:11:07 myproject rabbitmq-server[202847]: 2023-04-25 05:11:07.959338+01:00 [error] <0.130.0>     ancestors: [<0.129.0>]
+Apr 25 05:11:07 myproject rabbitmq-server[202847]: 2023-04-25 05:11:07.959338+01:00 [error] <0.130.0>     message_queue_len: 1
+Apr 25 05:11:07 myproject rabbitmq-server[202847]: 2023-04-25 05:11:07.959338+01:00 [error] <0.130.0>     messages: [{'EXIT',<0.131.0>,normal}]
+Apr 25 05:11:07 myproject rabbitmq-server[202847]: 2023-04-25 05:11:07.959338+01:00 [error] <0.130.0>     links: [<0.129.0>,<0.44.0>]
+Apr 25 05:11:07 myproject rabbitmq-server[202847]: 2023-04-25 05:11:07.959338+01:00 [error] <0.130.0>     dictionary: []
+Apr 25 05:11:07 myproject rabbitmq-server[202847]: 2023-04-25 05:11:07.959338+01:00 [error] <0.130.0>     trap_exit: true
+Apr 25 05:11:07 myproject rabbitmq-server[202847]: 2023-04-25 05:11:07.959338+01:00 [error] <0.130.0>     status: running
+Apr 25 05:11:07 myproject rabbitmq-server[202847]: 2023-04-25 05:11:07.959338+01:00 [error] <0.130.0>     heap_size: 376
+Apr 25 05:11:07 myproject rabbitmq-server[202847]: 2023-04-25 05:11:07.959338+01:00 [error] <0.130.0>     stack_size: 28
+Apr 25 05:11:07 myproject rabbitmq-server[202847]: 2023-04-25 05:11:07.959338+01:00 [error] <0.130.0>     reductions: 163
+Apr 25 05:11:07 myproject rabbitmq-server[202847]: 2023-04-25 05:11:07.959338+01:00 [error] <0.130.0>   neighbours:
+Apr 25 05:11:07 myproject rabbitmq-server[202847]: 2023-04-25 05:11:07.959338+01:00 [error] <0.130.0>
+Apr 25 05:11:07 myproject rabbitmq-server[202847]: 2023-04-25 05:11:07.973405+01:00 [notice] <0.44.0> Application rabbitmq_prelaunch exited with reason: {{shutdown,{failed_to_start_child,prelaunch,{dist_port_already_used,25672,"rabbit","myproject"}}},{rabbit_prelaunch_app,start,[normal,[]]}}
+Apr 25 05:11:09 myproject rabbitmq-server[202847]: {"Kernel pid terminated",application_controller,"{application_start_failure,rabbitmq_prelaunch,{{shutdown,{failed_to_start_child,prelaunch,{dist_port_already_used,25672,\"rabbit\",\"myproject\"}}},{rabbit_prelaunch_app,start,[normal,[]]}}}"}
+Apr 25 05:11:09 myproject rabbitmq-server[202847]: Kernel pid terminated (application_controller) ({application_start_failure,rabbitmq_prelaunch,{{shutdown,{failed_to_start_child,prelaunch,{dist_port_already_used,25672,"rabbit","myproject"}}},{rabbit_prelaunch_app,start,[normal,[]]}}})
+Apr 25 05:11:09 myproject rabbitmq-server[202847]: [1B blob data]
+Apr 25 05:11:09 myproject rabbitmq-server[202847]: Crash dump is being written to: erl_crash.dump...done
+Apr 25 05:11:09 myproject systemd[1]: [0;1;39m[0;1;31m[0;1;39mrabbitmq-server.service: Main process exited, code=exited, status=1/FAILURE[0m
+Apr 25 05:11:09 myproject systemd[1]: [0;1;39m[0;1;31m[0;1;39mrabbitmq-server.service: Failed with result 'exit-code'.[0m
+-- Subject: Unit failed
+-- Defined-By: systemd
+-- Support: https://access.redhat.com/support
+-- 
+-- The unit rabbitmq-server.service has entered the 'failed' state with result 'exit-code'.
+Apr 25 05:11:09 myproject systemd[1]: [0;1;31m[0;1;39m[0;1;31mFailed to start RabbitMQ broker.[0m
+-- Subject: Unit rabbitmq-server.service has failed
+-- Defined-By: systemd
+-- Support: https://access.redhat.com/support
+-- 
+-- Unit rabbitmq-server.service has failed.
+-- 
+-- The result is failed.
+Apr 25 05:11:19 myproject systemd[1]: rabbitmq-server.service: Service RestartSec=10s expired, scheduling restart.
+Apr 25 05:11:19 myproject systemd[1]: rabbitmq-server.service: Scheduled restart job, restart counter is at 6.
+-- Subject: Automatic restarting of a unit has been scheduled
+-- Defined-By: systemd
+-- Support: https://access.redhat.com/support
+-- 
+-- Automatic restarting of the unit rabbitmq-server.service has been scheduled, as the result for
+-- the configured Restart= setting for the unit.
+Apr 25 05:11:19 myproject systemd[1]: Stopped RabbitMQ broker.
+-- Subject: Unit rabbitmq-server.service has finished shutting down
+-- Defined-By: systemd
+-- Support: https://access.redhat.com/support
+-- 
+-- Unit rabbitmq-server.service has finished shutting down.
+Apr 25 05:11:19 myproject systemd[1]: Starting RabbitMQ broker...
+-- Subject: Unit rabbitmq-server.service has begun start-up
+-- Defined-By: systemd
+-- Support: https://access.redhat.com/support
+-- 
+-- Unit rabbitmq-server.service has begun starting up.
+Apr 25 05:11:20 myproject rabbitmq-server[202928]: 2023-04-25 05:11:20.447092+01:00 [error] <0.132.0>
+Apr 25 05:11:20 myproject rabbitmq-server[202928]: 2023-04-25 05:11:20.447092+01:00 [error] <0.132.0> BOOT FAILED
+Apr 25 05:11:20 myproject rabbitmq-server[202928]: 2023-04-25 05:11:20.447092+01:00 [error] <0.132.0> ===========
+Apr 25 05:11:20 myproject rabbitmq-server[202928]: 2023-04-25 05:11:20.447092+01:00 [error] <0.132.0> ERROR: could not bind to distribution port 25672, it is in use by another node: rabbit@myproject
+Apr 25 05:11:20 myproject rabbitmq-server[202928]: 2023-04-25 05:11:20.447092+01:00 [error] <0.132.0>
+Apr 25 05:11:20 myproject rabbitmq-server[202928]: BOOT FAILED
+Apr 25 05:11:20 myproject rabbitmq-server[202928]: ===========
+Apr 25 05:11:20 myproject rabbitmq-server[202928]: ERROR: could not bind to distribution port 25672, it is in use by another node: rabbit@myproject
+Apr 25 05:11:21 myproject rabbitmq-server[202928]: 2023-04-25 05:11:21.462110+01:00 [error] <0.132.0>     supervisor: {local,rabbit_prelaunch_sup}
+Apr 25 05:11:21 myproject rabbitmq-server[202928]: 2023-04-25 05:11:21.462110+01:00 [error] <0.132.0>     errorContext: start_error
+Apr 25 05:11:21 myproject rabbitmq-server[202928]: 2023-04-25 05:11:21.462110+01:00 [error] <0.132.0>     reason: {dist_port_already_used,25672,"rabbit","myproject"}
+Apr 25 05:11:21 myproject rabbitmq-server[202928]: 2023-04-25 05:11:21.462110+01:00 [error] <0.132.0>     offender: [{pid,undefined},
+Apr 25 05:11:21 myproject rabbitmq-server[202928]: 2023-04-25 05:11:21.462110+01:00 [error] <0.132.0>                {id,prelaunch},
+Apr 25 05:11:21 myproject rabbitmq-server[202928]: 2023-04-25 05:11:21.462110+01:00 [error] <0.132.0>                {mfargs,{rabbit_prelaunch,run_prelaunch_first_phase,[]}},
+Apr 25 05:11:21 myproject rabbitmq-server[202928]: 2023-04-25 05:11:21.462110+01:00 [error] <0.132.0>                {restart_type,transient},
+Apr 25 05:11:21 myproject rabbitmq-server[202928]: 2023-04-25 05:11:21.462110+01:00 [error] <0.132.0>                {significant,false},
+Apr 25 05:11:21 myproject rabbitmq-server[202928]: 2023-04-25 05:11:21.462110+01:00 [error] <0.132.0>                {shutdown,5000},
+Apr 25 05:11:21 myproject rabbitmq-server[202928]: 2023-04-25 05:11:21.462110+01:00 [error] <0.132.0>                {child_type,worker}]
+Apr 25 05:11:21 myproject rabbitmq-server[202928]: 2023-04-25 05:11:21.462110+01:00 [error] <0.132.0>
+Apr 25 05:11:21 myproject rabbitmq-server[202928]: 2023-04-25 05:11:21.462940+01:00 [error] <0.130.0>   crasher:
+Apr 25 05:11:21 myproject rabbitmq-server[202928]: 2023-04-25 05:11:21.462940+01:00 [error] <0.130.0>     initial call: application_master:init/4
+Apr 25 05:11:21 myproject rabbitmq-server[202928]: 2023-04-25 05:11:21.462940+01:00 [error] <0.130.0>     pid: <0.130.0>
+Apr 25 05:11:21 myproject rabbitmq-server[202928]: 2023-04-25 05:11:21.462940+01:00 [error] <0.130.0>     registered_name: []
+Apr 25 05:11:21 myproject rabbitmq-server[202928]: 2023-04-25 05:11:21.462940+01:00 [error] <0.130.0>     exception exit: {{shutdown,
+Apr 25 05:11:21 myproject rabbitmq-server[202928]: 2023-04-25 05:11:21.462940+01:00 [error] <0.130.0>                          {failed_to_start_child,prelaunch,
+Apr 25 05:11:21 myproject rabbitmq-server[202928]: 2023-04-25 05:11:21.462940+01:00 [error] <0.130.0>                              {dist_port_already_used,25672,"rabbit",
+Apr 25 05:11:21 myproject rabbitmq-server[202928]: 2023-04-25 05:11:21.462940+01:00 [error] <0.130.0>                                  "myproject"}}},
+Apr 25 05:11:21 myproject rabbitmq-server[202928]: 2023-04-25 05:11:21.462940+01:00 [error] <0.130.0>                      {rabbit_prelaunch_app,start,[normal,[]]}}
+Apr 25 05:11:21 myproject rabbitmq-server[202928]: 2023-04-25 05:11:21.462940+01:00 [error] <0.130.0>       in function  application_master:init/4 (application_master.erl, line 142)
+Apr 25 05:11:21 myproject rabbitmq-server[202928]: 2023-04-25 05:11:21.462940+01:00 [error] <0.130.0>     ancestors: [<0.129.0>]
+Apr 25 05:11:21 myproject rabbitmq-server[202928]: 2023-04-25 05:11:21.462940+01:00 [error] <0.130.0>     message_queue_len: 1
+Apr 25 05:11:21 myproject rabbitmq-server[202928]: 2023-04-25 05:11:21.462940+01:00 [error] <0.130.0>     messages: [{'EXIT',<0.131.0>,normal}]
+Apr 25 05:11:21 myproject rabbitmq-server[202928]: 2023-04-25 05:11:21.462940+01:00 [error] <0.130.0>     links: [<0.129.0>,<0.44.0>]
+Apr 25 05:11:21 myproject rabbitmq-server[202928]: 2023-04-25 05:11:21.462940+01:00 [error] <0.130.0>     dictionary: []
+Apr 25 05:11:21 myproject rabbitmq-server[202928]: 2023-04-25 05:11:21.462940+01:00 [error] <0.130.0>     trap_exit: true
+Apr 25 05:11:21 myproject rabbitmq-server[202928]: 2023-04-25 05:11:21.462940+01:00 [error] <0.130.0>     status: running
+Apr 25 05:11:21 myproject rabbitmq-server[202928]: 2023-04-25 05:11:21.462940+01:00 [error] <0.130.0>     heap_size: 376
+Apr 25 05:11:21 myproject rabbitmq-server[202928]: 2023-04-25 05:11:21.462940+01:00 [error] <0.130.0>     stack_size: 28
+Apr 25 05:11:21 myproject rabbitmq-server[202928]: 2023-04-25 05:11:21.462940+01:00 [error] <0.130.0>     reductions: 163
+Apr 25 05:11:21 myproject rabbitmq-server[202928]: 2023-04-25 05:11:21.462940+01:00 [error] <0.130.0>   neighbours:
+Apr 25 05:11:21 myproject rabbitmq-server[202928]: 2023-04-25 05:11:21.462940+01:00 [error] <0.130.0>
+Apr 25 05:11:21 myproject rabbitmq-server[202928]: 2023-04-25 05:11:21.481236+01:00 [notice] <0.44.0> Application rabbitmq_prelaunch exited with reason: {{shutdown,{failed_to_start_child,prelaunch,{dist_port_already_used,25672,"rabbit","myproject"}}},{rabbit_prelaunch_app,start,[normal,[]]}}
+Apr 25 05:11:22 myproject rabbitmq-server[202928]: {"Kernel pid terminated",application_controller,"{application_start_failure,rabbitmq_prelaunch,{{shutdown,{failed_to_start_child,prelaunch,{dist_port_already_used,25672,\"rabbit\",\"myproject\"}}},{rabbit_prelaunch_app,start,[normal,[]]}}}"}
+Apr 25 05:11:22 myproject rabbitmq-server[202928]: Kernel pid terminated (application_controller) ({application_start_failure,rabbitmq_prelaunch,{{shutdown,{failed_to_start_child,prelaunch,{dist_port_already_used,25672,"rabbit","myproject"}}},{rabbit_prelaunch_app,start,[normal,[]]}}})
+Apr 25 05:11:22 myproject rabbitmq-server[202928]: [1B blob data]
+Apr 25 05:11:23 myproject rabbitmq-server[202928]: Crash dump is being written to: erl_crash.dump...done
+Apr 25 05:11:23 myproject systemd[1]: [0;1;39m[0;1;31m[0;1;39mrabbitmq-server.service: Main process exited, code=exited, status=1/FAILURE[0m
+Apr 25 05:11:23 myproject systemd[1]: [0;1;39m[0;1;31m[0;1;39mrabbitmq-server.service: Failed with result 'exit-code'.[0m
+-- Subject: Unit failed
+-- Defined-By: systemd
+-- Support: https://access.redhat.com/support
+-- 
+-- The unit rabbitmq-server.service has entered the 'failed' state with result 'exit-code'.
+Apr 25 05:11:23 myproject systemd[1]: [0;1;31m[0;1;39m[0;1;31mFailed to start RabbitMQ broker.[0m
+-- Subject: Unit rabbitmq-server.service has failed
+-- Defined-By: systemd
+-- Support: https://access.redhat.com/support
+-- 
+-- Unit rabbitmq-server.service has failed.
+-- 
+-- The result is failed.
+Apr 25 05:11:33 myproject systemd[1]: rabbitmq-server.service: Service RestartSec=10s expired, scheduling restart.
+Apr 25 05:11:33 myproject systemd[1]: rabbitmq-server.service: Scheduled restart job, restart counter is at 7.
+-- Subject: Automatic restarting of a unit has been scheduled
+-- Defined-By: systemd
+-- Support: https://access.redhat.com/support
+-- 
+-- Automatic restarting of the unit rabbitmq-server.service has been scheduled, as the result for
+-- the configured Restart= setting for the unit.
+Apr 25 05:11:33 myproject systemd[1]: Stopped RabbitMQ broker.
+-- Subject: Unit rabbitmq-server.service has finished shutting down
+-- Defined-By: systemd
+-- Support: https://access.redhat.com/support
+-- 
+-- Unit rabbitmq-server.service has finished shutting down.
+Apr 25 05:11:33 myproject systemd[1]: Starting RabbitMQ broker...
+-- Subject: Unit rabbitmq-server.service has begun start-up
+-- Defined-By: systemd
+-- Support: https://access.redhat.com/support
+-- 
+-- Unit rabbitmq-server.service has begun starting up.
+Apr 25 05:11:33 myproject rabbitmq-server[203015]: BOOT FAILED
+Apr 25 05:11:33 myproject rabbitmq-server[203015]: ===========
+Apr 25 05:11:33 myproject rabbitmq-server[203015]: ERROR: could not bind to distribution port 25672, it is in use by another node: rabbit@myproject
+Apr 25 05:11:33 myproject rabbitmq-server[203015]: 2023-04-25 05:11:33.943914+01:00 [error] <0.132.0>
+Apr 25 05:11:33 myproject rabbitmq-server[203015]: 2023-04-25 05:11:33.943914+01:00 [error] <0.132.0> BOOT FAILED
+Apr 25 05:11:33 myproject rabbitmq-server[203015]: 2023-04-25 05:11:33.943914+01:00 [error] <0.132.0> ===========
+Apr 25 05:11:33 myproject rabbitmq-server[203015]: 2023-04-25 05:11:33.943914+01:00 [error] <0.132.0> ERROR: could not bind to distribution port 25672, it is in use by another node: rabbit@myproject
+Apr 25 05:11:33 myproject rabbitmq-server[203015]: 2023-04-25 05:11:33.943914+01:00 [error] <0.132.0>
+Apr 25 05:11:34 myproject rabbitmq-server[203015]: 2023-04-25 05:11:34.955177+01:00 [error] <0.132.0>     supervisor: {local,rabbit_prelaunch_sup}
+Apr 25 05:11:34 myproject rabbitmq-server[203015]: 2023-04-25 05:11:34.955177+01:00 [error] <0.132.0>     errorContext: start_error
+Apr 25 05:11:34 myproject rabbitmq-server[203015]: 2023-04-25 05:11:34.955177+01:00 [error] <0.132.0>     reason: {dist_port_already_used,25672,"rabbit","myproject"}
+Apr 25 05:11:34 myproject rabbitmq-server[203015]: 2023-04-25 05:11:34.955177+01:00 [error] <0.132.0>     offender: [{pid,undefined},
+Apr 25 05:11:34 myproject rabbitmq-server[203015]: 2023-04-25 05:11:34.955177+01:00 [error] <0.132.0>                {id,prelaunch},
+Apr 25 05:11:34 myproject rabbitmq-server[203015]: 2023-04-25 05:11:34.955177+01:00 [error] <0.132.0>                {mfargs,{rabbit_prelaunch,run_prelaunch_first_phase,[]}},
+Apr 25 05:11:34 myproject rabbitmq-server[203015]: 2023-04-25 05:11:34.955177+01:00 [error] <0.132.0>                {restart_type,transient},
+Apr 25 05:11:34 myproject rabbitmq-server[203015]: 2023-04-25 05:11:34.955177+01:00 [error] <0.132.0>                {significant,false},
+Apr 25 05:11:34 myproject rabbitmq-server[203015]: 2023-04-25 05:11:34.955177+01:00 [error] <0.132.0>                {shutdown,5000},
+Apr 25 05:11:34 myproject rabbitmq-server[203015]: 2023-04-25 05:11:34.955177+01:00 [error] <0.132.0>                {child_type,worker}]
+Apr 25 05:11:34 myproject rabbitmq-server[203015]: 2023-04-25 05:11:34.955177+01:00 [error] <0.132.0>
+Apr 25 05:11:34 myproject rabbitmq-server[203015]: 2023-04-25 05:11:34.956033+01:00 [error] <0.130.0>   crasher:
+Apr 25 05:11:34 myproject rabbitmq-server[203015]: 2023-04-25 05:11:34.956033+01:00 [error] <0.130.0>     initial call: application_master:init/4
+Apr 25 05:11:34 myproject rabbitmq-server[203015]: 2023-04-25 05:11:34.956033+01:00 [error] <0.130.0>     pid: <0.130.0>
+Apr 25 05:11:34 myproject rabbitmq-server[203015]: 2023-04-25 05:11:34.956033+01:00 [error] <0.130.0>     registered_name: []
+Apr 25 05:11:34 myproject rabbitmq-server[203015]: 2023-04-25 05:11:34.956033+01:00 [error] <0.130.0>     exception exit: {{shutdown,
+Apr 25 05:11:34 myproject rabbitmq-server[203015]: 2023-04-25 05:11:34.956033+01:00 [error] <0.130.0>                          {failed_to_start_child,prelaunch,
+Apr 25 05:11:34 myproject rabbitmq-server[203015]: 2023-04-25 05:11:34.956033+01:00 [error] <0.130.0>                              {dist_port_already_used,25672,"rabbit",
+Apr 25 05:11:34 myproject rabbitmq-server[203015]: 2023-04-25 05:11:34.956033+01:00 [error] <0.130.0>                                  "myproject"}}},
+Apr 25 05:11:34 myproject rabbitmq-server[203015]: 2023-04-25 05:11:34.956033+01:00 [error] <0.130.0>                      {rabbit_prelaunch_app,start,[normal,[]]}}
+Apr 25 05:11:34 myproject rabbitmq-server[203015]: 2023-04-25 05:11:34.956033+01:00 [error] <0.130.0>       in function  application_master:init/4 (application_master.erl, line 142)
+Apr 25 05:11:34 myproject rabbitmq-server[203015]: 2023-04-25 05:11:34.956033+01:00 [error] <0.130.0>     ancestors: [<0.129.0>]
+Apr 25 05:11:34 myproject rabbitmq-server[203015]: 2023-04-25 05:11:34.956033+01:00 [error] <0.130.0>     message_queue_len: 1
+Apr 25 05:11:34 myproject rabbitmq-server[203015]: 2023-04-25 05:11:34.956033+01:00 [error] <0.130.0>     messages: [{'EXIT',<0.131.0>,normal}]
+Apr 25 05:11:34 myproject rabbitmq-server[203015]: 2023-04-25 05:11:34.956033+01:00 [error] <0.130.0>     links: [<0.129.0>,<0.44.0>]
+Apr 25 05:11:34 myproject rabbitmq-server[203015]: 2023-04-25 05:11:34.956033+01:00 [error] <0.130.0>     dictionary: []
+Apr 25 05:11:34 myproject rabbitmq-server[203015]: 2023-04-25 05:11:34.956033+01:00 [error] <0.130.0>     trap_exit: true
+Apr 25 05:11:34 myproject rabbitmq-server[203015]: 2023-04-25 05:11:34.956033+01:00 [error] <0.130.0>     status: running
+Apr 25 05:11:34 myproject rabbitmq-server[203015]: 2023-04-25 05:11:34.956033+01:00 [error] <0.130.0>     heap_size: 376
+Apr 25 05:11:34 myproject rabbitmq-server[203015]: 2023-04-25 05:11:34.956033+01:00 [error] <0.130.0>     stack_size: 28
+Apr 25 05:11:34 myproject rabbitmq-server[203015]: 2023-04-25 05:11:34.956033+01:00 [error] <0.130.0>     reductions: 163
+Apr 25 05:11:34 myproject rabbitmq-server[203015]: 2023-04-25 05:11:34.956033+01:00 [error] <0.130.0>   neighbours:
+Apr 25 05:11:34 myproject rabbitmq-server[203015]: 2023-04-25 05:11:34.956033+01:00 [error] <0.130.0>
+Apr 25 05:11:34 myproject rabbitmq-server[203015]: 2023-04-25 05:11:34.972423+01:00 [notice] <0.44.0> Application rabbitmq_prelaunch exited with reason: {{shutdown,{failed_to_start_child,prelaunch,{dist_port_already_used,25672,"rabbit","myproject"}}},{rabbit_prelaunch_app,start,[normal,[]]}}
+Apr 25 05:11:36 myproject rabbitmq-server[203015]: {"Kernel pid terminated",application_controller,"{application_start_failure,rabbitmq_prelaunch,{{shutdown,{failed_to_start_child,prelaunch,{dist_port_already_used,25672,\"rabbit\",\"myproject\"}}},{rabbit_prelaunch_app,start,[normal,[]]}}}"}
+Apr 25 05:11:36 myproject rabbitmq-server[203015]: Kernel pid terminated (application_controller) ({application_start_failure,rabbitmq_prelaunch,{{shutdown,{failed_to_start_child,prelaunch,{dist_port_already_used,25672,"rabbit","myproject"}}},{rabbit_prelaunch_app,start,[normal,[]]}}})
+Apr 25 05:11:36 myproject rabbitmq-server[203015]: [1B blob data]
+Apr 25 05:11:36 myproject rabbitmq-server[203015]: Crash dump is being written to: erl_crash.dump...done
+Apr 25 05:11:36 myproject systemd[1]: [0;1;39m[0;1;31m[0;1;39mrabbitmq-server.service: Main process exited, code=exited, status=1/FAILURE[0m
+Apr 25 05:11:36 myproject systemd[1]: [0;1;39m[0;1;31m[0;1;39mrabbitmq-server.service: Failed with result 'exit-code'.[0m
+-- Subject: Unit failed
+-- Defined-By: systemd
+-- Support: https://access.redhat.com/support
+-- 
+-- The unit rabbitmq-server.service has entered the 'failed' state with result 'exit-code'.
+Apr 25 05:11:36 myproject systemd[1]: [0;1;31m[0;1;39m[0;1;31mFailed to start RabbitMQ broker.[0m
+-- Subject: Unit rabbitmq-server.service has failed
+-- Defined-By: systemd
+-- Support: https://access.redhat.com/support
+-- 
+-- Unit rabbitmq-server.service has failed.
+-- 
+-- The result is failed.
+Apr 25 05:11:46 myproject systemd[1]: rabbitmq-server.service: Service RestartSec=10s expired, scheduling restart.
+Apr 25 05:11:46 myproject systemd[1]: rabbitmq-server.service: Scheduled restart job, restart counter is at 8.
+-- Subject: Automatic restarting of a unit has been scheduled
+-- Defined-By: systemd
+-- Support: https://access.redhat.com/support
+-- 
+-- Automatic restarting of the unit rabbitmq-server.service has been scheduled, as the result for
+-- the configured Restart= setting for the unit.
+Apr 25 05:11:46 myproject systemd[1]: Stopped RabbitMQ broker.
+-- Subject: Unit rabbitmq-server.service has finished shutting down
+-- Defined-By: systemd
+-- Support: https://access.redhat.com/support
+-- 
+-- Unit rabbitmq-server.service has finished shutting down.
+Apr 25 05:11:46 myproject systemd[1]: Starting RabbitMQ broker...
+-- Subject: Unit rabbitmq-server.service has begun start-up
+-- Defined-By: systemd
+-- Support: https://access.redhat.com/support
+-- 
+-- Unit rabbitmq-server.service has begun starting up.
+Apr 25 05:11:47 myproject rabbitmq-server[203129]: BOOT FAILED
+Apr 25 05:11:47 myproject rabbitmq-server[203129]: ===========
+Apr 25 05:11:47 myproject rabbitmq-server[203129]: ERROR: could not bind to distribution port 25672, it is in use by another node: rabbit@myproject
+Apr 25 05:11:47 myproject rabbitmq-server[203129]: 2023-04-25 05:11:47.481272+01:00 [error] <0.132.0>
+Apr 25 05:11:47 myproject rabbitmq-server[203129]: 2023-04-25 05:11:47.481272+01:00 [error] <0.132.0> BOOT FAILED
+Apr 25 05:11:47 myproject rabbitmq-server[203129]: 2023-04-25 05:11:47.481272+01:00 [error] <0.132.0> ===========
+Apr 25 05:11:47 myproject rabbitmq-server[203129]: 2023-04-25 05:11:47.481272+01:00 [error] <0.132.0> ERROR: could not bind to distribution port 25672, it is in use by another node: rabbit@myproject
+Apr 25 05:11:47 myproject rabbitmq-server[203129]: 2023-04-25 05:11:47.481272+01:00 [error] <0.132.0>
+Apr 25 05:11:48 myproject rabbitmq-server[203129]: 2023-04-25 05:11:48.492800+01:00 [error] <0.132.0>     supervisor: {local,rabbit_prelaunch_sup}
+Apr 25 05:11:48 myproject rabbitmq-server[203129]: 2023-04-25 05:11:48.492800+01:00 [error] <0.132.0>     errorContext: start_error
+Apr 25 05:11:48 myproject rabbitmq-server[203129]: 2023-04-25 05:11:48.492800+01:00 [error] <0.132.0>     reason: {dist_port_already_used,25672,"rabbit","myproject"}
+Apr 25 05:11:48 myproject rabbitmq-server[203129]: 2023-04-25 05:11:48.492800+01:00 [error] <0.132.0>     offender: [{pid,undefined},
+Apr 25 05:11:48 myproject rabbitmq-server[203129]: 2023-04-25 05:11:48.492800+01:00 [error] <0.132.0>                {id,prelaunch},
+Apr 25 05:11:48 myproject rabbitmq-server[203129]: 2023-04-25 05:11:48.492800+01:00 [error] <0.132.0>                {mfargs,{rabbit_prelaunch,run_prelaunch_first_phase,[]}},
+Apr 25 05:11:48 myproject rabbitmq-server[203129]: 2023-04-25 05:11:48.492800+01:00 [error] <0.132.0>                {restart_type,transient},
+Apr 25 05:11:48 myproject rabbitmq-server[203129]: 2023-04-25 05:11:48.492800+01:00 [error] <0.132.0>                {significant,false},
+Apr 25 05:11:48 myproject rabbitmq-server[203129]: 2023-04-25 05:11:48.492800+01:00 [error] <0.132.0>                {shutdown,5000},
+Apr 25 05:11:48 myproject rabbitmq-server[203129]: 2023-04-25 05:11:48.492800+01:00 [error] <0.132.0>                {child_type,worker}]
+Apr 25 05:11:48 myproject rabbitmq-server[203129]: 2023-04-25 05:11:48.492800+01:00 [error] <0.132.0>
+Apr 25 05:11:48 myproject rabbitmq-server[203129]: 2023-04-25 05:11:48.493656+01:00 [error] <0.130.0>   crasher:
+Apr 25 05:11:48 myproject rabbitmq-server[203129]: 2023-04-25 05:11:48.493656+01:00 [error] <0.130.0>     initial call: application_master:init/4
+Apr 25 05:11:48 myproject rabbitmq-server[203129]: 2023-04-25 05:11:48.493656+01:00 [error] <0.130.0>     pid: <0.130.0>
+Apr 25 05:11:48 myproject rabbitmq-server[203129]: 2023-04-25 05:11:48.493656+01:00 [error] <0.130.0>     registered_name: []
+Apr 25 05:11:48 myproject rabbitmq-server[203129]: 2023-04-25 05:11:48.493656+01:00 [error] <0.130.0>     exception exit: {{shutdown,
+Apr 25 05:11:48 myproject rabbitmq-server[203129]: 2023-04-25 05:11:48.493656+01:00 [error] <0.130.0>                          {failed_to_start_child,prelaunch,
+Apr 25 05:11:48 myproject rabbitmq-server[203129]: 2023-04-25 05:11:48.493656+01:00 [error] <0.130.0>                              {dist_port_already_used,25672,"rabbit",
+Apr 25 05:11:48 myproject rabbitmq-server[203129]: 2023-04-25 05:11:48.493656+01:00 [error] <0.130.0>                                  "myproject"}}},
+Apr 25 05:11:48 myproject rabbitmq-server[203129]: 2023-04-25 05:11:48.493656+01:00 [error] <0.130.0>                      {rabbit_prelaunch_app,start,[normal,[]]}}
+Apr 25 05:11:48 myproject rabbitmq-server[203129]: 2023-04-25 05:11:48.493656+01:00 [error] <0.130.0>       in function  application_master:init/4 (application_master.erl, line 142)
+Apr 25 05:11:48 myproject rabbitmq-server[203129]: 2023-04-25 05:11:48.493656+01:00 [error] <0.130.0>     ancestors: [<0.129.0>]
+Apr 25 05:11:48 myproject rabbitmq-server[203129]: 2023-04-25 05:11:48.493656+01:00 [error] <0.130.0>     message_queue_len: 1
+Apr 25 05:11:48 myproject rabbitmq-server[203129]: 2023-04-25 05:11:48.493656+01:00 [error] <0.130.0>     messages: [{'EXIT',<0.131.0>,normal}]
+Apr 25 05:11:48 myproject rabbitmq-server[203129]: 2023-04-25 05:11:48.493656+01:00 [error] <0.130.0>     links: [<0.129.0>,<0.44.0>]
+Apr 25 05:11:48 myproject rabbitmq-server[203129]: 2023-04-25 05:11:48.493656+01:00 [error] <0.130.0>     dictionary: []
+Apr 25 05:11:48 myproject rabbitmq-server[203129]: 2023-04-25 05:11:48.493656+01:00 [error] <0.130.0>     trap_exit: true
+Apr 25 05:11:48 myproject rabbitmq-server[203129]: 2023-04-25 05:11:48.493656+01:00 [error] <0.130.0>     status: running
+Apr 25 05:11:48 myproject rabbitmq-server[203129]: 2023-04-25 05:11:48.493656+01:00 [error] <0.130.0>     heap_size: 376
+Apr 25 05:11:48 myproject rabbitmq-server[203129]: 2023-04-25 05:11:48.493656+01:00 [error] <0.130.0>     stack_size: 28
+Apr 25 05:11:48 myproject rabbitmq-server[203129]: 2023-04-25 05:11:48.493656+01:00 [error] <0.130.0>     reductions: 163
+Apr 25 05:11:48 myproject rabbitmq-server[203129]: 2023-04-25 05:11:48.493656+01:00 [error] <0.130.0>   neighbours:
+Apr 25 05:11:48 myproject rabbitmq-server[203129]: 2023-04-25 05:11:48.493656+01:00 [error] <0.130.0>
+Apr 25 05:11:48 myproject rabbitmq-server[203129]: 2023-04-25 05:11:48.507699+01:00 [notice] <0.44.0> Application rabbitmq_prelaunch exited with reason: {{shutdown,{failed_to_start_child,prelaunch,{dist_port_already_used,25672,"rabbit","myproject"}}},{rabbit_prelaunch_app,start,[normal,[]]}}
+Apr 25 05:11:50 myproject rabbitmq-server[203129]: {"Kernel pid terminated",application_controller,"{application_start_failure,rabbitmq_prelaunch,{{shutdown,{failed_to_start_child,prelaunch,{dist_port_already_used,25672,\"rabbit\",\"myproject\"}}},{rabbit_prelaunch_app,start,[normal,[]]}}}"}
+Apr 25 05:11:50 myproject rabbitmq-server[203129]: Kernel pid terminated (application_controller) ({application_start_failure,rabbitmq_prelaunch,{{shutdown,{failed_to_start_child,prelaunch,{dist_port_already_used,25672,"rabbit","myproject"}}},{rabbit_prelaunch_app,start,[normal,[]]}}})
+Apr 25 05:11:50 myproject rabbitmq-server[203129]: [1B blob data]
+Apr 25 05:11:50 myproject rabbitmq-server[203129]: Crash dump is being written to: erl_crash.dump...done
+Apr 25 05:11:50 myproject systemd[1]: [0;1;39m[0;1;31m[0;1;39mrabbitmq-server.service: Main process exited, code=exited, status=1/FAILURE[0m
+Apr 25 05:11:50 myproject systemd[1]: [0;1;39m[0;1;31m[0;1;39mrabbitmq-server.service: Failed with result 'exit-code'.[0m
+-- Subject: Unit failed
+-- Defined-By: systemd
+-- Support: https://access.redhat.com/support
+-- 
+-- The unit rabbitmq-server.service has entered the 'failed' state with result 'exit-code'.
+Apr 25 05:11:50 myproject systemd[1]: [0;1;31m[0;1;39m[0;1;31mFailed to start RabbitMQ broker.[0m
+-- Subject: Unit rabbitmq-server.service has failed
+-- Defined-By: systemd
+-- Support: https://access.redhat.com/support
+-- 
+-- Unit rabbitmq-server.service has failed.
+-- 
+-- The result is failed.
+Apr 25 05:12:00 myproject systemd[1]: rabbitmq-server.service: Service RestartSec=10s expired, scheduling restart.
+Apr 25 05:12:00 myproject systemd[1]: rabbitmq-server.service: Scheduled restart job, restart counter is at 9.
+-- Subject: Automatic restarting of a unit has been scheduled
+-- Defined-By: systemd
+-- Support: https://access.redhat.com/support
+-- 
+-- Automatic restarting of the unit rabbitmq-server.service has been scheduled, as the result for
+-- the configured Restart= setting for the unit.
+Apr 25 05:12:00 myproject systemd[1]: Stopped RabbitMQ broker.
+-- Subject: Unit rabbitmq-server.service has finished shutting down
+-- Defined-By: systemd
+-- Support: https://access.redhat.com/support
+-- 
+-- Unit rabbitmq-server.service has finished shutting down.
+Apr 25 05:12:00 myproject systemd[1]: Starting RabbitMQ broker...
+-- Subject: Unit rabbitmq-server.service has begun start-up
+-- Defined-By: systemd
+-- Support: https://access.redhat.com/support
+-- 
+-- Unit rabbitmq-server.service has begun starting up.
+Apr 25 05:12:01 myproject rabbitmq-server[203202]: BOOT FAILED
+Apr 25 05:12:01 myproject rabbitmq-server[203202]: ===========
+Apr 25 05:12:01 myproject rabbitmq-server[203202]: ERROR: could not bind to distribution port 25672, it is in use by another node: rabbit@myproject
+Apr 25 05:12:01 myproject rabbitmq-server[203202]: 2023-04-25 05:12:01.088456+01:00 [error] <0.132.0>
+Apr 25 05:12:01 myproject rabbitmq-server[203202]: 2023-04-25 05:12:01.088456+01:00 [error] <0.132.0> BOOT FAILED
+Apr 25 05:12:01 myproject rabbitmq-server[203202]: 2023-04-25 05:12:01.088456+01:00 [error] <0.132.0> ===========
+Apr 25 05:12:01 myproject rabbitmq-server[203202]: 2023-04-25 05:12:01.088456+01:00 [error] <0.132.0> ERROR: could not bind to distribution port 25672, it is in use by another node: rabbit@myproject
+Apr 25 05:12:01 myproject rabbitmq-server[203202]: 2023-04-25 05:12:01.088456+01:00 [error] <0.132.0>
+Apr 25 05:12:02 myproject rabbitmq-server[203202]: 2023-04-25 05:12:02.099655+01:00 [error] <0.132.0>     supervisor: {local,rabbit_prelaunch_sup}
+Apr 25 05:12:02 myproject rabbitmq-server[203202]: 2023-04-25 05:12:02.099655+01:00 [error] <0.132.0>     errorContext: start_error
+Apr 25 05:12:02 myproject rabbitmq-server[203202]: 2023-04-25 05:12:02.099655+01:00 [error] <0.132.0>     reason: {dist_port_already_used,25672,"rabbit","myproject"}
+Apr 25 05:12:02 myproject rabbitmq-server[203202]: 2023-04-25 05:12:02.099655+01:00 [error] <0.132.0>     offender: [{pid,undefined},
+Apr 25 05:12:02 myproject rabbitmq-server[203202]: 2023-04-25 05:12:02.099655+01:00 [error] <0.132.0>                {id,prelaunch},
+Apr 25 05:12:02 myproject rabbitmq-server[203202]: 2023-04-25 05:12:02.099655+01:00 [error] <0.132.0>                {mfargs,{rabbit_prelaunch,run_prelaunch_first_phase,[]}},
+Apr 25 05:12:02 myproject rabbitmq-server[203202]: 2023-04-25 05:12:02.099655+01:00 [error] <0.132.0>                {restart_type,transient},
+Apr 25 05:12:02 myproject rabbitmq-server[203202]: 2023-04-25 05:12:02.099655+01:00 [error] <0.132.0>                {significant,false},
+Apr 25 05:12:02 myproject rabbitmq-server[203202]: 2023-04-25 05:12:02.099655+01:00 [error] <0.132.0>                {shutdown,5000},
+Apr 25 05:12:02 myproject rabbitmq-server[203202]: 2023-04-25 05:12:02.099655+01:00 [error] <0.132.0>                {child_type,worker}]
+Apr 25 05:12:02 myproject rabbitmq-server[203202]: 2023-04-25 05:12:02.099655+01:00 [error] <0.132.0>
+Apr 25 05:12:02 myproject rabbitmq-server[203202]: 2023-04-25 05:12:02.100240+01:00 [error] <0.130.0>   crasher:
+Apr 25 05:12:02 myproject rabbitmq-server[203202]: 2023-04-25 05:12:02.100240+01:00 [error] <0.130.0>     initial call: application_master:init/4
+Apr 25 05:12:02 myproject rabbitmq-server[203202]: 2023-04-25 05:12:02.100240+01:00 [error] <0.130.0>     pid: <0.130.0>
+Apr 25 05:12:02 myproject rabbitmq-server[203202]: 2023-04-25 05:12:02.100240+01:00 [error] <0.130.0>     registered_name: []
+Apr 25 05:12:02 myproject rabbitmq-server[203202]: 2023-04-25 05:12:02.100240+01:00 [error] <0.130.0>     exception exit: {{shutdown,
+Apr 25 05:12:02 myproject rabbitmq-server[203202]: 2023-04-25 05:12:02.100240+01:00 [error] <0.130.0>                          {failed_to_start_child,prelaunch,
+Apr 25 05:12:02 myproject rabbitmq-server[203202]: 2023-04-25 05:12:02.100240+01:00 [error] <0.130.0>                              {dist_port_already_used,25672,"rabbit",
+Apr 25 05:12:02 myproject rabbitmq-server[203202]: 2023-04-25 05:12:02.100240+01:00 [error] <0.130.0>                                  "myproject"}}},
+Apr 25 05:12:02 myproject rabbitmq-server[203202]: 2023-04-25 05:12:02.100240+01:00 [error] <0.130.0>                      {rabbit_prelaunch_app,start,[normal,[]]}}
+Apr 25 05:12:02 myproject rabbitmq-server[203202]: 2023-04-25 05:12:02.100240+01:00 [error] <0.130.0>       in function  application_master:init/4 (application_master.erl, line 142)
+Apr 25 05:12:02 myproject rabbitmq-server[203202]: 2023-04-25 05:12:02.100240+01:00 [error] <0.130.0>     ancestors: [<0.129.0>]
+Apr 25 05:12:02 myproject rabbitmq-server[203202]: 2023-04-25 05:12:02.100240+01:00 [error] <0.130.0>     message_queue_len: 1
+Apr 25 05:12:02 myproject rabbitmq-server[203202]: 2023-04-25 05:12:02.100240+01:00 [error] <0.130.0>     messages: [{'EXIT',<0.131.0>,normal}]
+Apr 25 05:12:02 myproject rabbitmq-server[203202]: 2023-04-25 05:12:02.100240+01:00 [error] <0.130.0>     links: [<0.129.0>,<0.44.0>]
+Apr 25 05:12:02 myproject rabbitmq-server[203202]: 2023-04-25 05:12:02.100240+01:00 [error] <0.130.0>     dictionary: []
+Apr 25 05:12:02 myproject rabbitmq-server[203202]: 2023-04-25 05:12:02.100240+01:00 [error] <0.130.0>     trap_exit: true
+Apr 25 05:12:02 myproject rabbitmq-server[203202]: 2023-04-25 05:12:02.100240+01:00 [error] <0.130.0>     status: running
+Apr 25 05:12:02 myproject rabbitmq-server[203202]: 2023-04-25 05:12:02.100240+01:00 [error] <0.130.0>     heap_size: 376
+Apr 25 05:12:02 myproject rabbitmq-server[203202]: 2023-04-25 05:12:02.100240+01:00 [error] <0.130.0>     stack_size: 28
+Apr 25 05:12:02 myproject rabbitmq-server[203202]: 2023-04-25 05:12:02.100240+01:00 [error] <0.130.0>     reductions: 163
+Apr 25 05:12:02 myproject rabbitmq-server[203202]: 2023-04-25 05:12:02.100240+01:00 [error] <0.130.0>   neighbours:
+Apr 25 05:12:02 myproject rabbitmq-server[203202]: 2023-04-25 05:12:02.100240+01:00 [error] <0.130.0>
+Apr 25 05:12:02 myproject rabbitmq-server[203202]: 2023-04-25 05:12:02.119137+01:00 [notice] <0.44.0> Application rabbitmq_prelaunch exited with reason: {{shutdown,{failed_to_start_child,prelaunch,{dist_port_already_used,25672,"rabbit","myproject"}}},{rabbit_prelaunch_app,start,[normal,[]]}}
+Apr 25 05:12:03 myproject rabbitmq-server[203202]: {"Kernel pid terminated",application_controller,"{application_start_failure,rabbitmq_prelaunch,{{shutdown,{failed_to_start_child,prelaunch,{dist_port_already_used,25672,\"rabbit\",\"myproject\"}}},{rabbit_prelaunch_app,start,[normal,[]]}}}"}
+Apr 25 05:12:03 myproject rabbitmq-server[203202]: Kernel pid terminated (application_controller) ({application_start_failure,rabbitmq_prelaunch,{{shutdown,{failed_to_start_child,prelaunch,{dist_port_already_used,25672,"rabbit","myproject"}}},{rabbit_prelaunch_app,start,[normal,[]]}}})
+Apr 25 05:12:03 myproject rabbitmq-server[203202]: [1B blob data]
+Apr 25 05:12:03 myproject rabbitmq-server[203202]: Crash dump is being written to: erl_crash.dump...done
+Apr 25 05:12:03 myproject systemd[1]: [0;1;39m[0;1;31m[0;1;39mrabbitmq-server.service: Main process exited, code=exited, status=1/FAILURE[0m
+Apr 25 05:12:03 myproject systemd[1]: [0;1;39m[0;1;31m[0;1;39mrabbitmq-server.service: Failed with result 'exit-code'.[0m
+-- Subject: Unit failed
+-- Defined-By: systemd
+-- Support: https://access.redhat.com/support
+-- 
+-- The unit rabbitmq-server.service has entered the 'failed' state with result 'exit-code'.
+Apr 25 05:12:03 myproject systemd[1]: [0;1;31m[0;1;39m[0;1;31mFailed to start RabbitMQ broker.[0m
+-- Subject: Unit rabbitmq-server.service has failed
+-- Defined-By: systemd
+-- Support: https://access.redhat.com/support
+-- 
+-- Unit rabbitmq-server.service has failed.
+-- 
+-- The result is failed.

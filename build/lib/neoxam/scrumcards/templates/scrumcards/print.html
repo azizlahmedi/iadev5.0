@@ -1,0 +1,47 @@
+{% load nbsp %}
+{% load timedelta %}
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Scrum Cards</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{% static "css/bootstrap.min.css" %}">
+    <link rel="stylesheet" href="{% static "css/bootstrap-theme.min.css" %}">
+    <link rel="stylesheet" href="{% static "css/font-awesome.min.css" %}">
+    <link rel="stylesheet" href="{% static "css/scrumcards.css" %}">
+</head>
+<body>
+<div class="container">
+{% for card in cards %}
+<div class="row">
+    <div class="col-xs-6">
+        <div class="panel panel-default card card-{{ card.issue_type|slugify }}">
+            <div class="panel-heading">
+                {{ card.key|nbsp }}&nbsp;&bullet;&nbsp;{{ card.issue_type|nbsp }}
+                <span class="pull-right">
+                    {% if card.points %}<i class="fa fa fa-dot-circle-o"></i>&nbsp;{{ card.points }}
+                    {% elif card.estimate %}<i class="fa fa-clock-o"></i>&nbsp;{{ card.estimate|timedelta_humanize|nbsp }}
+                    {% endif %}
+                </span></div>
+            <div class="panel-body"><p>{{ card.summary }}</p></div>
+            {% if card.subtasks or card.parent %}
+            <ul class="list-group">
+                {% if card.parent %}
+                    <li class="list-group-item"><i class="fa fa-arrow-up"></i><span class="pull-right">{{ card.parent|nbsp }}</span></li>
+                {% endif %}
+                {% for key in card.subtasks %}
+                    <li class="list-group-item"><i class="fa fa-arrow-down"></i><span class="pull-right">{{ key|nbsp }}</span></li>
+                {% endfor %}
+            </ul>
+            {% endif %}
+        </div>
+    </div>
+</div>
+{% endfor %}
+</div>
+<script src="{% static "js/jquery.min.js" %}">
+<script src="{% static "js/bootstrap.min.js" %}"></script>
+</body>
+</html>

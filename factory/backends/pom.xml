@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>com.neoxam.adl</groupId>
+  <artifactId>adlframes</artifactId>
+  <version>1.0.0-SNAPSHOT</version>
+
+  <name>ADL :: Frames</name>
+  <packaging>jar</packaging>
+
+  <ciManagement>
+    <url>https://access.my-nx.com/bamboo-dev</url>
+    <system>Bamboo</system>
+  </ciManagement>
+
+  <organization>
+    <name>Neoxam Investment Accounting (GP3)</name>
+    <url>http://www.neoxam.com</url>
+  </organization>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <maven.compiler.source>1.8</maven.compiler.source>
+    <maven.compiler.target>1.8</maven.compiler.target>
+
+    <enforcer.requireMavenVersion>[3.5.3,3.6.0)</enforcer.requireMavenVersion>
+    <enforcer.requireJavaVersion>[1.8,1.9)</enforcer.requireJavaVersion>
+
+    <target.directory>target</target.directory>
+    <src.directory>adl/src/gra/java</src.directory>
+    <output.directory>${target.directory}/classes</output.directory>
+
+  </properties>
+
+  <!-- distribution -->
+  <distributionManagement>
+    <repository>         <id>inhouse</id>          <url>${artifactory.url}/gp-releases</url>  </repository>
+    <snapshotRepository> <id>inhouse_snapshot</id> <url>${artifactory.url}/gp-snapshots</url> </snapshotRepository>
+  </distributionManagement>
+
+  <repositories>
+    <repository>
+      <id>gp</id>
+      <name>gp global repository</name>
+      <url>${artifactory.url}/gp</url>
+      <releases> <enabled>true</enabled> </releases>
+      <snapshots> <enabled>true</enabled> </snapshots>
+    </repository>
+  </repositories>
+
+  <pluginRepositories>
+    <pluginRepository>
+      <id>bintray-plugins</id>
+      <name>bintray-plugins</name>
+      <url>https://jcenter.bintray.com</url>
+      <snapshots> <enabled>false</enabled> </snapshots>
+    </pluginRepository>
+  </pluginRepositories>
+
+  <dependencies>
+    <dependency>
+      <groupId>com.neoxam.wit</groupId>
+      <artifactId>webintake-client</artifactId>
+      <version>5.0.0-SNAPSHOT</version>
+    </dependency>
+  </dependencies>
+
+  <build>
+    <directory>${target.directory}</directory>
+    <defaultGoal>compile</defaultGoal>
+    <sourceDirectory>${src.directory}</sourceDirectory>
+    <outputDirectory>${output.directory}</outputDirectory>
+    <pluginManagement>
+      <plugins>
+        <plugin> <groupId>org.apache.maven.plugins</groupId>     <artifactId>maven-antrun-plugin</artifactId>               <version>1.8</version>                                </plugin>
+        <plugin> <groupId>org.apache.maven.plugins</groupId>     <artifactId>maven-clean-plugin</artifactId>                <version>3.0.0</version>                              </plugin>
+        <plugin> <groupId>org.apache.maven.plugins</groupId>     <artifactId>maven-compiler-plugin</artifactId>             <version>3.7.0</version>                              </plugin>
+        <plugin> <groupId>org.apache.maven.plugins</groupId>     <artifactId>maven-deploy-plugin</artifactId>               <version>2.8.2</version>                              </plugin>
+        <plugin> <groupId>org.apache.maven.plugins</groupId>     <artifactId>maven-enforcer-plugin</artifactId>             <version>3.0.0-M1</version>                           </plugin>
+        <plugin> <groupId>org.apache.maven.plugins</groupId>     <artifactId>maven-install-plugin</artifactId>              <version>2.5.2</version>                              </plugin>
+        <plugin> <groupId>org.apache.maven.plugins</groupId>     <artifactId>maven-jar-plugin</artifactId>                  <version>3.0.2</version>                              </plugin>
+        <plugin> <groupId>org.apache.maven.plugins</groupId>     <artifactId>maven-dependency-plugin</artifactId>           <version>3.0.2</version>                              </plugin>
+        <plugin> <groupId>org.apache.maven.plugins</groupId>     <artifactId>maven-resources-plugin</artifactId>            <version>3.0.2</version>                              </plugin>
+        <plugin> <groupId>org.apache.maven.plugins</groupId>     <artifactId>maven-site-plugin</artifactId>                 <version>3.7</version>                                </plugin>
+        <plugin> <groupId>org.apache.maven.plugins</groupId>     <artifactId>maven-source-plugin</artifactId>               <version>3.0.1</version>                              </plugin>
+        <plugin> <groupId>org.apache.maven.plugins</groupId>     <artifactId>maven-surefire-plugin</artifactId>             <version>2.20.1</version>                             </plugin>
+        <plugin> <groupId>org.apache.maven.plugins</groupId>     <artifactId>maven-toolchains-plugin</artifactId>           <version>1.1</version>                                </plugin>
+        <plugin> <groupId>org.apache.maven.plugins</groupId>     <artifactId>maven-war-plugin</artifactId>                  <version>3.2.0</version>                              </plugin>
+
+        <plugin> <groupId>org.codehaus.mojo</groupId>            <artifactId>build-helper-maven-plugin</artifactId>         <version>3.0.0</version>                              </plugin>
+        <plugin> <groupId>org.codehaus.mojo</groupId>            <artifactId>appassembler-maven-plugin</artifactId>         <version>2.0.0</version>                              </plugin>
+        <plugin> <groupId>org.codehaus.mojo</groupId>            <artifactId>exec-maven-plugin</artifactId>                 <version>1.6.0</version>                              </plugin>
+        <plugin> <groupId>org.apache.felix</groupId>             <artifactId>maven-bundle-plugin</artifactId>               <version>3.5.0</version>                              </plugin>
+        <plugin> <groupId>org.eclipse.jetty</groupId>            <artifactId>jetty-maven-plugin</artifactId>                <version>9.4.8.v20171121</version>                    </plugin>
+        <plugin> <groupId>org.reficio</groupId>                  <artifactId>p2-maven-plugin</artifactId>                   <version>1.3.0</version>                              </plugin>
+        <plugin> <groupId>org.commonjava.maven.plugins</groupId> <artifactId>directory-maven-plugin</artifactId>            <version>0.1</version>                                </plugin>
+      </plugins>
+    </pluginManagement>
+
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-enforcer-plugin</artifactId>
+        <executions>
+          <execution>
+            <id>enforce-versions</id>
+            <goals>
+              <goal>enforce</goal>
+            </goals>
+            <configuration>
+              <rules>
+                <requireMavenVersion> <version>${enforcer.requireMavenVersion}</version> </requireMavenVersion>
+                <requireJavaVersion>  <version>${enforcer.requireJavaVersion}</version>  </requireJavaVersion>
+              </rules>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>
+
+  <profiles>
+    <!--
+      URL for Artifactory. The insecure version is kept only for reference.
+    -->
+    <profile>
+      <id>artifactory-secure</id>
+      <activation>
+        <property>
+          <name>artifactory.mode</name>
+          <value>!insecure</value>
+        </property>
+      </activation>
+      <properties> <artifactory.url>https://access.my-nx.com/artifactory</artifactory.url> </properties>
+    </profile>
+
+    <profile>
+      <id>artifactory-insecure</id>
+      <activation>
+        <property>
+          <name>artifactory.mode</name>
+          <value>insecure</value>
+        </property>
+      </activation>
+      <properties> <artifactory.url>http://nx-artifacts:8085/artifactory</artifactory.url> </properties>
+    </profile>
+  </profiles>
+
+</project>

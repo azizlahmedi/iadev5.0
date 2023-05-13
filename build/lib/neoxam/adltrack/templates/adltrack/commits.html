@@ -1,0 +1,50 @@
+{% extends "adltrack/base.html" %}
+
+{% load static %}
+{% load adltrack_tags %}
+
+{% block content %}
+<h1 class="page-header">Commits</h1>
+<div class="table-responsive">
+    <table class="table table-striped">
+        <thead>
+        <tr>
+            <th>Revision</th>
+            <th>Path</th>
+            <th>Procedures</th>
+            <th>Analyzed procedures</th>
+            <th>Tokens</th>
+            <th>&Delta; Tokens</th>
+            <th>SCM</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for commit in commits %}
+        <tr>
+            <td><a href="{% url 'adltrack-commit' revision=commit.revision %}">{{ commit.revision }}</a></td>
+            <td>{{ commit.path }}</td>
+            <td>{{ commit.data.count_procedures }}</td>
+            <td>{{ commit.data.count_procedures_analyzed }}</td>
+            <td>{{ commit.data.count_tokens }}</td>
+            <td>{{ commit.data.delta_tokens }}</td>
+            <td><a href="{{ commit|fisheye_revision_url }}" target="_blank">FishEye</a>, <a href="{{ commit|viewvc_revision_url }}" target="_blank">ViewVC</a></td>
+        </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+</div>
+<nav>
+    <ul class="pager">
+        {% if commits.has_previous %}
+        <li class="previous">
+            <a href="?page={{ commits.previous_page_number }}"><span aria-hidden="true">&larr;</span> Newer</a>
+        </li>
+        {% endif %}
+        {% if commits.has_next %}
+        <li class="next">
+            <a href="?page={{ commits.next_page_number }}">Older <span aria-hidden="true">&rarr;</span></a>
+        </li>
+        {% endif %}
+    </ul>
+</nav>
+{% endblock %}

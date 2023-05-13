@@ -1,0 +1,56 @@
+{% extends "adltrack/base.html" %}
+
+{% load static %}
+{% load adltrack_tags %}
+
+{% block content %}
+<h1 class="page-header">Top 50</h1>
+
+<h2 class="sub-header">Tokens</h2>
+<div class="table-responsive">
+    <table class="table table-striped">
+        <thead>
+        <tr>
+            <th>Version</th>
+            <th>Name</th>
+            <th>Tokens</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for pv in procedure_versions_tokens %}
+        <tr {% if not pv.analyzed %}class="danger" {% endif %}>
+            <td>
+                <a href="{% url 'adltrack-procedure-version' version=pv.procedure.version name=pv.procedure.name revision=pv.commit.revision %}">{{pv.procedure.version }}</a>
+            </td>
+            <td>{{ pv.procedure.name }}</td>
+            <td>{{ pv.data.count_tokens }}</td>
+        </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+</div>
+
+<h2 class="sub-header">Macros</h2>
+<div class="table-responsive">
+    <table class="table table-striped">
+        <thead>
+        <tr>
+            <th>Version</th>
+            <th>Name</th>
+            <th>Macros</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for pv in procedure_versions_macros %}
+        <tr {% if not pv.analyzed %}class="danger" {% endif %}>
+            <td>
+                <a href="{% url 'adltrack-procedure-version' version=pv.procedure.version name=pv.procedure.name revision=pv.commit.revision %}">{{pv.procedure.version }}</a>
+            </td>
+            <td>{{ pv.procedure.name }}</td>
+            <td>{% if pv.analyzed %}{{ pv.data.macros|length }}{% endif %}</td>
+        </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% endblock %}

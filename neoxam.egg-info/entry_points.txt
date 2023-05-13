@@ -1,0 +1,4 @@
+[console_scripts]
+fab = fabric.main:main
+neoxam = manage:main
+

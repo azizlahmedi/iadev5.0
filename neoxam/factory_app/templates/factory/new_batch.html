@@ -1,0 +1,19 @@
+{% extends "factory/base.html" %}
+
+{% load static %}
+
+{% load crispy_forms_tags %}
+{% block content %}
+<h1 class="page-header">Gp2016 Batch</h1>
+<div class="col-xs-12 col-sm-9">
+    <form action="." method="post" class="form-horizontal">
+        {% csrf_token %}
+        {% crispy form %}
+        <div class="form-group">
+            <div class="col-sm-offset-3 col-sm-9">
+                <button type="submit" class="btn btn-success">Compile</button>
+            </div>
+        </div>
+    </form>
+</div>
+{% endblock content %}

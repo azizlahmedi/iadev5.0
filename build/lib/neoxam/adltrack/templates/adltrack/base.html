@@ -1,0 +1,11 @@
+{% extends "commons/base.html" %}
+
+{% block sidebar %}
+<ul class="nav nav-sidebar">
+<li{% if nav == 'commits' %} class="active"{% endif %}><a href="{% url 'adltrack-commits' %}">Commits</a></li>
+<li{% if nav == 'procedures' %} class="active"{% endif %}><a href="{% url 'adltrack-procedures' %}">Procedures</a></li>
+<li{% if nav == 'procedures-analysis' %} class="active"{% endif %}><a href="{% url 'adltrack-procedures-analysis' %}">Tokenization failures</a></li>
+<li{% if nav == 'tops' %} class="active"{% endif %}><a href="{% url 'adltrack-tops' %}">Top 50</a></li>
+</ul>
+{% endblock %}
+
